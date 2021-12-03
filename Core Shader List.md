@@ -83,6 +83,13 @@ The middle section(s) of a tripwire.
 
 ---
 
+### end_portal (and end_gateway)
+The strange image in the end portal. Appears in end gateways, but not in the dimension background.
+The shader files are called `end_portal.vsh`/`fsh`/`json`, but `end_gateway.json` also exists but just uses the end_portal vsh/fsh.
+
+## Special
+These are shaders that render things that aren't clearly either a block, an entity or a ui element.
+
 ### lines
 The outline when hovering over a block, as well as the debug crosshair and hitboxes.
 And structure blocks preview. Also fishing lines.
@@ -98,11 +105,3 @@ The block cracks when mining a block. Has some in-built transparency.
 The beam of a beacon. Seems to get rendered behind clouds.
 
 ---
-
-### end_portal (and end_gateway)
-The strange image in the end portal. Appears in end gateways, but not in the dimension background.
-The shader files are called `end_portal.vsh`/`fsh`/`json`, but `end_gateway.json` also exists but just uses the end_portal vsh/fsh.
-
----
-
-
