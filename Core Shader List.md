@@ -35,8 +35,9 @@ The part in brackets is a summary and not a full list of everything each shader 
   - [position_tex_lightmap_color](#position_tex_lightmap_color)
   - [rendertype_text_intensity](#rendertype_text_intensity)
   - [rendertype_text_intensity_see_through](#rendertype_text_intensity_see_through)
-  - [position_color_normal](#position_color_normal)
   - [rendertype_armor_glint](#rendertype_armor_glint)
+- [Unused](#unused)
+  - [position_color_normal](#position_color_normal)
 
 ---
 
@@ -217,56 +218,49 @@ The beam of a beacon. Seems to get rendered behind clouds.
 These are shaders that exist in the files that we do not currently know the purpose of. More testing is needed for these.
 
 ### block
-Has 2 ins (UV0 and UV2) and 2 outs (texCoord0 and texCoord2), no math other than what’s included in most other shaders. Not observed ingame, may only be used as a base.
+Has 2 ins (`UV0` and `UV2`) and 2 outs (`texCoord0` and `texCoord2`), no math other than what’s included in most other shaders. Not observed ingame, may only be used as a base.
 
 [Back to Top](#contents)
 
 ---
 
 ### new_entity
-Has 3 ins (UV0, UV1, and UV2) and 3 outs (texCoord0, texCoord1, and texCoord2), no math other than what’s included in most other shaders. Not observed ingame, may only be used as a base.
+Has 3 ins (`UV0`, `UV1`, and `UV2`) and 3 outs (`texCoord0`, `texCoord1`, and `texCoord2`), no math other than what’s included in most other shaders. Not observed ingame, may only be used as a base.
 
 [Back to Top](#contents)
 
 ---
 
 ### position_color_lightmap
-Similar to position_color, but includes a second sampler for lightmap calculations. Not observed ingame.
+Similar to `position_color`, but includes a second sampler for lightmap calculations. Not observed ingame.
 
 [Back to Top](#contents)
 
 ---
 
 ### position_color_tex_lightmap
-Similar to position_color_tex, but includes a second sampler for lightmap calculations. Not observed ingame.
+Similar to `position_color_tex`, but includes a second sampler for lightmap calculations. Not observed ingame.
 
 [Back to Top](#contents)
 
 ---
 
 ### position_tex_lightmap_color
-Similar to position_tex_color, but includes a second sampler for lightmap calculations. Not observed ingame.
+Similar to `position_tex_color`, but includes a second sampler for lightmap calculations. Not observed ingame.
 
 [Back to Top](#contents)
 
 ---
 
 ### rendertype_text_intensity
-Functionally the same as rendertype_text, except it uses the red value for every color in the texture calculation. Not observed ingame, may only be used for internal calculations. 
+Functionally the same as `rendertype_text`, except it uses the red value for every color in the texture calculation. Not observed ingame, may only be used for internal calculations. 
 
 [Back to Top](#contents)
 
 ---
 
 ### rendertype_text_intensity_see_through
-Functionally the same as rendertype_text_see_through, except it uses the red value for every color in the texture calculation. Not observed ingame, may only be used for internal calculations.
-
-[Back to Top](#contents)
-
----
-
-### position_color_normal
-Unknown. Doesn’t seem to be loaded by the game, but included on assets.
+Functionally the same as `rendertype_text_see_through`, except it uses the red value for every color in the texture calculation. Not observed ingame, may only be used for internal calculations.
 
 [Back to Top](#contents)
 
@@ -279,3 +273,13 @@ Unknown.
 
 ---
 
+# Unused 
+
+These are shaders that exist in the files, but are not loaded by the game.
+
+### position_color_normal
+Unknown. Doesn’t seem to be loaded by the game, but included on assets.
+
+[Back to Top](#contents)
+
+---
