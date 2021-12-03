@@ -271,8 +271,6 @@ Unknown.
 
 [Back to Top](#contents)
 
----
-
 # Unused 
 
 These are shaders that exist in the files, but are not loaded by the game.
