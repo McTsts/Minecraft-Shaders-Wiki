@@ -124,7 +124,7 @@ These are shaders which are targeted towards a specific element of the display.
 **For each shader name here, assume that it is prefixed with `rendertype_`.**
 
 ## Blocks
-When dealing with block shaders which have something to do with `translucent`, `cutout` or `cutout_mipped`, here is a [useful list](https://github.com/McTsts/Minecraft-Shaders-Wiki/blob/main/List%20of%20Blocks%20) by for all blocks of those specific types.
+When dealing with block shaders which have something to do with `translucent`, `cutout` or `cutout_mipped`, here is a [useful list](List%20of%20Blocks%20Affected.md) by for all blocks of those specific types.
 
 [Back to Top](#contents)
 
@@ -140,6 +140,7 @@ All solid blocks, lava, and when in fast mode, leaves. Also affects non-transluc
 
 ### cutout
 All non-cube-hitbox blocks, check the list in the section header.
+A list of all blocks rendered by this shader can be found [here](List%20of%20Blocks%20Affected.md#cutout).
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_cutout.png" width=600>
 
@@ -149,6 +150,7 @@ All non-cube-hitbox blocks, check the list in the section header.
 
 ### cutout_mipped
 Certain blocks not covered by other shaders, check the list in the section header. Covers leaves in fancy/fabulous graphics.
+A list of all blocks rendered by this shader can be found [here](List%20of%20Blocks%20Affected.md#cutout_mipped).
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_cutout_mipped.png" width=600>
 
@@ -158,6 +160,7 @@ Certain blocks not covered by other shaders, check the list in the section heade
 
 ### translucent
 Translucent blocks like stained glass, check the list in the section header.
+A list of all blocks rendered by this shader can be found [here](List%20of%20Blocks%20Affected.md#translucent).
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent.png" width=400> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent_2.png" width=400>
 
