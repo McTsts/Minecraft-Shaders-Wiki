@@ -87,7 +87,13 @@ The middle section(s) of a tripwire.
 The strange image in the end portal. Appears in end gateways, but not in the dimension background.
 The shader files are called `end_portal.vsh`/`fsh`/`json`, but `end_gateway.json` also exists but just uses the end_portal vsh/fsh.
 
-## Special
+## Entity
+WIP
+
+## UI
+WIP
+
+## Other
 These are shaders that render things that aren't clearly either a block, an entity or a ui element.
 
 ### lines
