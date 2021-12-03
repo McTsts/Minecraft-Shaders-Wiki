@@ -50,6 +50,9 @@ These are shaders which are targeted towards a specific element of the display.
 **For each shader name here, assume that it is prefixed with `rendertype_`.**
 
 ## Blocks
+When dealing with block shaders which have something to do with `translucent`, `cutout` or `cutout_mipped`, here is a [useful list](https://gist.github.com/boq/4514320b590de1fbe84349d23b542b28) by boq for all blocks of those specific types.
+
+
 ### solid
 All solid blocks, lava, and when in fast mode, leaves. Also affects non-translucent falling blocks
 
