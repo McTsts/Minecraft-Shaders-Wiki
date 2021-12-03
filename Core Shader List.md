@@ -132,8 +132,7 @@ When dealing with block shaders which have something to do with `translucent`, `
 ### solid
 All solid blocks, lava, and when in fast mode, leaves. Also affects non-translucent falling blocks.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_solid.png" width=400>
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_solid_2.png" width=400>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_solid.png" width=400> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_solid_2.png" width=400>
 
 [Back to Top](#contents)
 
@@ -160,8 +159,7 @@ Certain blocks not covered by other shaders, check the list in the section heade
 ### translucent
 Translucent blocks like stained glass, check the list in the section header.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent.png" width=400>
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent_2.png" width=400>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent.png" width=400> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent_2.png" width=400>
 
 [Back to Top](#contents)
 
@@ -189,8 +187,7 @@ The middle section(s) of a tripwire.
 The strange image in the end portal. Appears in end gateways, but not in the dimension background.
 The shader files are called `end_portal.vsh`/`fsh`/`json`, but `end_gateway.json` also exists but just uses the end_portal vsh/fsh.  
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_end_portal.png" width=400>
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_end_gateway.png" width=300>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_end_portal.png" width=400> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_end_gateway.png" width=300>
 
 [Back to Top](#contents)
 
@@ -217,8 +214,7 @@ Handles a few different things:
 * The f3+G chunk border displays,
 * Previews in the structure block.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_lines.png" width=300>
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_lines_2.png" width=400>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_lines.png" width=300> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_lines_2.png" width=400>
 
 [Back to Top](#contents)
 
