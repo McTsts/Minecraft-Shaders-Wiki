@@ -39,8 +39,6 @@ The part in brackets is a summary and not a full list of everything each shader 
 - [Unused](#unused)
   - [position_color_normal](#position_color_normal)
 
----
-
 # Non-Rendertype
 There are several shaders which are not prefixed with `rendertype_`. These seem to be for more general targets, such as the sky or all particles.  
 
@@ -101,8 +99,6 @@ The End sky, main menu panorama, and menu backgrounds.
 <img src="https://github.com/McTsts/shaders/blob/main/images/position_tex_color.png" width=600>
 
 [Back to Top](#contents)
-
----
 
 # Rendertype
 These are shaders which are targeted towards a specific element of the display.
@@ -210,8 +206,6 @@ The beam of a beacon. Seems to get rendered behind clouds.
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_beacon_beam.png" width=300>
 
 [Back to Top](#contents)
-
----
 
 # Unknown
 
