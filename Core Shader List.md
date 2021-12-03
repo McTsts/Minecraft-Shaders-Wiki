@@ -28,3 +28,42 @@ Fire overlay when the player is burning.
 ## position_tex_color
 The End sky, main menu panorama, and menu backgrounds.
 <img src="https://github.com/McTsts/shaders/blob/main/images/position_tex_color.png" width=600>
+
+# Rendertype
+These are shaders which are targeted towards a specific element of the display.
+**For each shader name here, assume that it is prefixed with `rendertype_`.**
+
+## Blocks
+### solid
+All solid blocks, lava, and when in fast mode, leaves. Also affects non-translucent falling blocks
+
+### cutout
+All non-cube-hitbox blocks: saplings, glass, rails, cobwebs, grass, fern, dead bushes, seagrass, flowers, mushrooms, torches, fire, redstone, repeater, comparator, crops, crop stems, cocoa, cactus, sugarcane, kelp, vines (+ glow lichen), lily pad, sea pickles, bamboo, berry bushes, nether sprouts, nether fungus, nether roots, chorus plants, coral, spore blossoms, azalea, moss carpet, dripleaf, hanging roots, sculk sensor, flower pots, doors, trapdoors, ladders, brewing stands, beacons, spawners, conduits, scaffolding, stonecutters, lanterns, campfires, pointed dripstone, amethysts, end rods, lightning rods.
+
+### cutout_mipped
+Some blocks: grass blocks, iron bars, glass panes, tripwire hooks, hoppers, chains (leaves when using fancy or fabulous graphics)
+
+### translucent
+Translucent blocks: water (still and flowing), ice, nether portal, stained and tinted glass (not normal glass), slime and honey, bubbles. I have strong suspicion to believe that Sampler2 is the tint overlay used with biomes, since vertexColor tints the water.
+
+### translucent_moving_block
+Blocks which are translucent and are being moved by a piston. The one below is stained glass.
+
+### tripwire
+The middle section(s) of a tripwire.
+
+### lines
+The outline when hovering over a block, as well as the debug crosshair and hitboxes.
+And structure blocks preview. Also fishing lines.
+
+### crumbling
+The block cracks when mining a block. Has some in-built transparency.
+
+### beacon_beam
+The beam of a beacon. Seems to get rendered behind clouds.
+
+### end_portal (and end_gateway)
+The strange image in the end portal. Appears in end gateways, but not in the dimension background.
+`end_gateway.json` also exists but just uses the end_portal vsh/fsh.
+
+
