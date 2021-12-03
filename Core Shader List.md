@@ -18,11 +18,14 @@ sun, moon, worldborder, gui texture, hotbar texture, powder snow overlay, vignet
 <img src="https://github.com/McTsts/shaders/blob/main/images/position_tex.png" width=600>
 
 ### position_tex_color_normal 
-Clouds.
+Clouds.  
+<img src="https://github.com/McTsts/shaders/blob/main/images/position_tex_color_normal.png" width=600>
 
 ### position_color_tex 
-Fire overlay when the player is burning.
+Fire overlay when the player is burning.  
+<img src="https://github.com/McTsts/shaders/blob/main/images/position_color_tex.png" width=600>
 
 ### position_tex_color
 The End sky, main menu panorama, and menu backgrounds.
-
+<img src="https://github.com/McTsts/shaders/blob/main/images/position_tex_color.png" width=600>
+>>>>>>> Stashed changes
