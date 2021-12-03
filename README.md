@@ -14,8 +14,8 @@ The colour of the sky. Also affects text highlighting.
 The black transparent background on UI elements such as the chat field or the pause menu, the red Mojang loading background, highlighting over item slots, hover text backgrounds, durability bars, as well as the transparent lower hemisphere overlay on the sky approximately between times 11315 to 14150 (sunset) and 21830 to 24670 (sunrise). Also affects the black bars when 
 
 ### position_tex
-sun, moon, worldborder, gui texture, hotbar texture, powder snow overlay, vignette, pumpkin scoped in with a spyglass. Also affects the chunk border display. For UI elements Position is the screen size divided by the gui scale. E.g. 1920x1080 with GUI scale 3 means Position for x will be [0,640] and for y [0,360].
-![position_tex example](images/position_tex.png)
+sun, moon, worldborder, gui texture, hotbar texture, powder snow overlay, vignette, pumpkin scoped in with a spyglass. Also affects the chunk border display. For UI elements Position is the screen size divided by the gui scale. E.g. 1920x1080 with GUI scale 3 means Position for x will be [0,640] and for y [0,360].  
+<img src="https://github.com/McTsts/shaders/blob/main/images/position_tex.png" width=600>
 
 ### position_tex
 sun, moon, worldborder, gui texture, hotbar texture, powder snow overlay, vignette, pumpkin blur and crosshair, skin player in tab, mojang logo
