@@ -16,6 +16,8 @@ The black transparent background on UI elements such as the chat field or the pa
 ### position_tex
 sun, moon, worldborder, gui texture, hotbar texture, powder snow overlay, vignette, pumpkin scoped in with a spyglass. Also affects the chunk border display. For UI elements Position is the screen size divided by the gui scale. E.g. 1920x1080 with GUI scale 3 means Position for x will be [0,640] and for y [0,360].  
 <img src="https://github.com/McTsts/shaders/blob/main/images/position_tex.png" width=600>
+Also pumpkin blur, crosshair, skin player in tab and mojang logo
+<img src="https://github.com/McTsts/shaders/blob/main/images/position_tex2.png" width=600>
 
 ### position_tex_color_normal 
 Clouds.
