@@ -54,38 +54,47 @@ When dealing with block shaders which have something to do with `translucent`, `
 
 
 ### solid
-All solid blocks, lava, and when in fast mode, leaves. Also affects non-translucent falling blocks
+All solid blocks, lava, and when in fast mode, leaves. Also affects non-translucent falling blocks  
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_solid.png" width=600>
 
 ---
 
 ### cutout
-All non-cube-hitbox blocks: saplings, glass, rails, cobwebs, grass, fern, dead bushes, seagrass, flowers, mushrooms, torches, fire, redstone, repeater, comparator, crops, crop stems, cocoa, cactus, sugarcane, kelp, vines (+ glow lichen), lily pad, sea pickles, bamboo, berry bushes, nether sprouts, nether fungus, nether roots, chorus plants, coral, spore blossoms, azalea, moss carpet, dripleaf, hanging roots, sculk sensor, flower pots, doors, trapdoors, ladders, brewing stands, beacons, spawners, conduits, scaffolding, stonecutters, lanterns, campfires, pointed dripstone, amethysts, end rods, lightning rods.
+All non-cube-hitbox blocks: saplings, glass, rails, cobwebs, grass, fern, dead bushes, seagrass, flowers, mushrooms, torches, fire, redstone, repeater, comparator, crops, crop stems, cocoa, cactus, sugarcane, kelp, vines (+ glow lichen), lily pad, sea pickles, bamboo, berry bushes, nether sprouts, nether fungus, nether roots, chorus plants, coral, spore blossoms, azalea, moss carpet, dripleaf, hanging roots, sculk sensor, flower pots, doors, trapdoors, ladders, brewing stands, beacons, spawners, conduits, scaffolding, stonecutters, lanterns, campfires, pointed dripstone, amethysts, end rods, lightning rods.  
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_cutout.png" width=600>
 
 ---
 
 ### cutout_mipped
-Some blocks: grass blocks, iron bars, glass panes, tripwire hooks, hoppers, chains (leaves when using fancy or fabulous graphics)
+Some blocks: grass blocks, iron bars, glass panes, tripwire hooks, hoppers, chains (leaves when using fancy or fabulous graphics)  
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_cutout_mipped.png" width=600>
 
 ---
 
 ### translucent
-Translucent blocks: water (still and flowing), ice, nether portal, stained and tinted glass (not normal glass), slime and honey, bubbles. I have strong suspicion to believe that Sampler2 is the tint overlay used with biomes, since vertexColor tints the water.
+Translucent blocks: water (still and flowing), ice, nether portal, stained and tinted glass (not normal glass), slime and honey, bubbles. I have strong suspicion to believe that Sampler2 is the tint overlay used with biomes, since vertexColor tints the water.  
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent.png" width=400>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent2.png" width=400>
 
 ---
 
 ### translucent_moving_block
-Blocks which are translucent and are being moved by a piston. The one below is stained glass.
+Blocks which are translucent and are being moved by a piston. The one below is stained glass.  
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent_moving_block.png" width=600>
 
 ---
 
 ### tripwire
-The middle section(s) of a tripwire.
+The middle section(s) of a tripwire.  
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_tripwire.png" width=600>
 
 ---
 
 ### end_portal (and end_gateway)
 The strange image in the end portal. Appears in end gateways, but not in the dimension background.
-The shader files are called `end_portal.vsh`/`fsh`/`json`, but `end_gateway.json` also exists but just uses the end_portal vsh/fsh.
+The shader files are called `end_portal.vsh`/`fsh`/`json`, but `end_gateway.json` also exists but just uses the end_portal vsh/fsh.  
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_end_portal.png" width=400>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_end_gateway.png" width=400>
 
 ## Entity
 WIP
@@ -98,16 +107,20 @@ These are shaders that render things that aren't clearly either a block, an enti
 
 ### lines
 The outline when hovering over a block, as well as the debug crosshair and hitboxes.
-And structure blocks preview. Also fishing lines.
+And structure blocks preview. Also fishing lines.  
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_lines.png" width=400>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_lines2.png" width=400>
 
 ---
 
 ### crumbling
-The block cracks when mining a block. Has some in-built transparency.
+The block cracks when mining a block. Has some in-built transparency.  
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_crumbling.png" width=600>
 
 ---
 
 ### beacon_beam
-The beam of a beacon. Seems to get rendered behind clouds.
+The beam of a beacon. Seems to get rendered behind clouds.  
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_beacon_beam.png" width=600>
 
 ---
