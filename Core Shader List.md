@@ -98,7 +98,7 @@ The beam of a beacon. Seems to get rendered behind clouds.
 
 ### end_portal (and end_gateway)
 The strange image in the end portal. Appears in end gateways, but not in the dimension background.
-`end_gateway.json` also exists but just uses the end_portal vsh/fsh.
+The shader files are called `end_portal.vsh`/`fsh`/`json`, but `end_gateway.json` also exists but just uses the end_portal vsh/fsh.
 
 ---
 
