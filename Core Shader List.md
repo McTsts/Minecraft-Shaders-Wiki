@@ -64,7 +64,17 @@ The colour of the sky. Also affects text highlighting.
 ---
 
 ### position_color
-The black transparent background on UI elements such as the chat field or the pause menu, the red Mojang loading background, highlighting over item slots, hover text backgrounds, durability bars, as well as the transparent lower hemisphere overlay on the sky approximately between times 11315 to 14150 (sunset) and 21830 to 24670 (sunrise). Also affects the black bars when 
+Handles a few different things:
+* The black transparent background on UI elements such as the chat field or the pause menu,
+* The Mojang loading background,
+* Highlighting item slots,
+* The background of tooltips,
+* The transparent lower hemisphere overlay on the sky approximately between times 11315 to 14150 (sunset) and 21830 to 24670 (sunrise),
+* The black bars on the sides when scoped in with a spyglass.
+
+For UI elements, Position is the screen size divided by the GUI scale. E.g. 1920x1080 with GUI scale 3 means Position for x will be [0,640] and for y [0,360].
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/position_color.png" width=600>
 
 [Back to Top](#contents)
 
@@ -105,22 +115,22 @@ These are shaders which are targeted towards a specific element of the display.
 **For each shader name here, assume that it is prefixed with `rendertype_`.**
 
 ## Blocks
-When dealing with block shaders which have something to do with `translucent`, `cutout` or `cutout_mipped`, here is a [useful list](https://github.com/McTsts/Minecraft-Shaders-Wiki/blob/main/List%20of%20Blocks%20) by boq for all blocks of those specific types.
+When dealing with block shaders which have something to do with `translucent`, `cutout` or `cutout_mipped`, here is a [useful list](https://github.com/McTsts/Minecraft-Shaders-Wiki/blob/main/List%20of%20Blocks%20) by for all blocks of those specific types.
 
 [Back to Top](#contents)
 
 
 ### solid
-All solid blocks, lava, and when in fast mode, leaves. Also affects non-translucent falling blocks  
+All solid blocks, lava, and when in fast mode, leaves. Also affects non-translucent falling blocks.
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_solid.png" width=400>
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_solid2.png" width=400>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_solid_2.png" width=400>
 
 [Back to Top](#contents)
 
 ---
 
 ### cutout
-All non-cube-hitbox blocks: saplings, glass, rails, cobwebs, grass, fern, dead bushes, seagrass, flowers, mushrooms, torches, fire, redstone, repeater, comparator, crops, crop stems, cocoa, cactus, sugarcane, kelp, vines (+ glow lichen), lily pad, sea pickles, bamboo, berry bushes, nether sprouts, nether fungus, nether roots, chorus plants, coral, spore blossoms, azalea, moss carpet, dripleaf, hanging roots, sculk sensor, flower pots, doors, trapdoors, ladders, brewing stands, beacons, spawners, conduits, scaffolding, stonecutters, lanterns, campfires, pointed dripstone, amethysts, end rods, lightning rods.  
+All non-cube-hitbox blocks, check the list in the section header.
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_cutout.png" width=600>
 
 [Back to Top](#contents)
@@ -128,7 +138,7 @@ All non-cube-hitbox blocks: saplings, glass, rails, cobwebs, grass, fern, dead b
 ---
 
 ### cutout_mipped
-Some blocks: grass blocks, iron bars, glass panes, tripwire hooks, hoppers, chains (leaves when using fancy or fabulous graphics)  
+Certain blocks not covered by other shaders, check the list in the section header. Covers leaves in fancy/fabulous graphics.
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_cutout_mipped.png" width=600>
 
 [Back to Top](#contents)
@@ -136,9 +146,9 @@ Some blocks: grass blocks, iron bars, glass panes, tripwire hooks, hoppers, chai
 ---
 
 ### translucent
-Translucent blocks: water (still and flowing), ice, nether portal, stained and tinted glass (not normal glass), slime and honey, bubbles. I have strong suspicion to believe that Sampler2 is the tint overlay used with biomes, since vertexColor tints the water.  
+Translucent blocks like stained glass, check the list in the section header.
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent.png" width=400>
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent2.png" width=400>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent_2.png" width=400>
 
 [Back to Top](#contents)
 
@@ -184,10 +194,14 @@ WIP
 These are shaders that render things that aren't clearly either a block, an entity or a ui element.
 
 ### lines
-The outline when hovering over a block, as well as the debug crosshair and hitboxes.
-And structure blocks preview. Also fishing lines.  
+Handles a few different things:
+* The outline when hovering over a block,
+* The debug crosshair,
+* The f3+B hitbox displays,
+* The f3+G chunk border displays,
+* Previews in the structure block.
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_lines.png" width=300>
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_lines2.png" width=400>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_lines_2.png" width=400>
 
 [Back to Top](#contents)
 
