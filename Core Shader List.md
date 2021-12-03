@@ -1,18 +1,29 @@
 # Contents
 - [Non-Rendertype](#non-rendertype)
-  - blit_screen
-  - particle
-  - position
-  - position_color
-  - position_tex
-  - position_tex_color_normal
-  - position_color_tex
-  - position_tex_color
-- Rendertype
-  - Blocks
-  - Entities
-  - UI
-  - Other
+  - [blit_screen](#blit_screen)
+  - [particle](#particle)
+  - [position](#position)
+  - [position_color](#position_color)
+  - [position_tex](#position_tex)
+  - [position_tex_color_normal](#position_tex_color_normal)
+  - [position_color_tex](#position_color_tex)
+  - [position_tex_color](#position_tex_color)
+- [Rendertype](#rendertype)
+  - [Blocks](#blocks)
+    - [solid](#solid)
+    - [cutout](#cutout)
+    - [cutout_mipped](#cutout_mipped)
+    - [translucent](#translucent)
+    - [translucent_moving_block](#translucent_moving_block)
+    - [tripwire](#tripwire)
+    - [end_portal](#end_portal-and-end_gateway)
+    - [end_gateway](#end_portal-and-end_gateway)
+  - [Entities](#entities)
+  - [UI](#ui)
+  - [Other](#other)
+    - [lines](#lines)
+    - [crumbling](#crumbling)
+    - [beacon_beam](#beacon_beam)
 
 # Non-Rendertype
 There are several shaders which are not prefixed with `rendertype_`. These seem to be for more general targets, such as the sky or all particles.  
@@ -113,7 +124,7 @@ The shader files are called `end_portal.vsh`/`fsh`/`json`, but `end_gateway.json
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_end_portal.png" width=400>
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_end_gateway.png" width=300>
 
-## Entity
+## Entities
 WIP
 
 ## UI
