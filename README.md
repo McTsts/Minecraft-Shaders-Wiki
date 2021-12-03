@@ -5,7 +5,7 @@ There are several shaders which are not prefixed with rendertype_. These seem to
 Blit copies one buffer to another, however this cannot be overridden in a resource pack. 
 
 ### particle
-All particles. The alpha value specified in the shader will override the particle’s inbuilt transparency e.g. in the sneeze particle. Others, like the splash particle, don't seem to allow this. More testing needed. 
+All particles. The alpha value specified in the shader will override the particle’s inbuilt transparency e.g. in the sneeze particle. Others, like the splash particle, don't seem to allow this. More testing needed.
 
 ### position
 The colour of the sky. Also affects text highlighting. 
