@@ -4,3 +4,4 @@ In the 1.17 snapshot 21w10a, more shader types were added for resource packs to 
 
 ## Contents
 [Core Shader List](https://github.com/McTsts/mc-shaders-info/blob/main/Core%20Shader%20List.md)
+[Utilities & Resources](https://github.com/McTsts/mc-shaders-info/blob/main/Utilities%20%26%20Resources.md)
