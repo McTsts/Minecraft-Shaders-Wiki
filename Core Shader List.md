@@ -1,3 +1,19 @@
+# Contents
+- [Non-Rendertype](#non-rendertype)
+  - blit_screen
+  - particle
+  - position
+  - position_color
+  - position_tex
+  - position_tex_color_normal
+  - position_color_tex
+  - position_tex_color
+- Rendertype
+  - Blocks
+  - Entities
+  - UI
+  - Other
+
 # Non-Rendertype
 There are several shaders which are not prefixed with `rendertype_`. These seem to be for more general targets, such as the sky or all particles.  
 
