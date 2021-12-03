@@ -124,7 +124,7 @@ These are shaders which are targeted towards a specific element of the display.
 **For each shader name here, assume that it is prefixed with `rendertype_`.**
 
 ## Blocks
-When dealing with block shaders which have something to do with `translucent`, `cutout` or `cutout_mipped`, here is a [useful list](List%20of%20Blocks%20Affected.md) by for all blocks of those specific types.
+When dealing with block shaders which have something to do with `translucent`, `cutout` or `cutout_mipped`, here is a [useful list](List%20of%20Blocks%20Affected.md) for all blocks of those specific types.
 
 [Back to Top](#contents)
 
