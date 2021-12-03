@@ -55,7 +55,8 @@ When dealing with block shaders which have something to do with `translucent`, `
 
 ### solid
 All solid blocks, lava, and when in fast mode, leaves. Also affects non-translucent falling blocks  
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_solid.png" width=600>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_solid.png" width=400>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_solid2.png" width=400>
 
 ---
 
@@ -80,7 +81,7 @@ Translucent blocks: water (still and flowing), ice, nether portal, stained and t
 
 ### translucent_moving_block
 Blocks which are translucent and are being moved by a piston. The one below is stained glass.  
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent_moving_block.png" width=600>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent_moving_block.png" width=400>
 
 ---
 
@@ -94,7 +95,7 @@ The middle section(s) of a tripwire.
 The strange image in the end portal. Appears in end gateways, but not in the dimension background.
 The shader files are called `end_portal.vsh`/`fsh`/`json`, but `end_gateway.json` also exists but just uses the end_portal vsh/fsh.  
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_end_portal.png" width=400>
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_end_gateway.png" width=400>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_end_gateway.png" width=300>
 
 ## Entity
 WIP
@@ -108,7 +109,7 @@ These are shaders that render things that aren't clearly either a block, an enti
 ### lines
 The outline when hovering over a block, as well as the debug crosshair and hitboxes.
 And structure blocks preview. Also fishing lines.  
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_lines.png" width=400>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_lines.png" width=300>
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_lines2.png" width=400>
 
 ---
@@ -121,6 +122,6 @@ The block cracks when mining a block. Has some in-built transparency.
 
 ### beacon_beam
 The beam of a beacon. Seems to get rendered behind clouds.  
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_beacon_beam.png" width=600>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_beacon_beam.png" width=300>
 
 ---
