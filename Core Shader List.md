@@ -81,7 +81,13 @@ For UI elements, Position is the screen size divided by the GUI scale. E.g. 1920
 ---
 
 ### position_tex
-sun, moon, worldborder, gui texture, hotbar texture, powder snow overlay, vignette, pumpkin scoped in with a spyglass. Also affects the chunk border display. For UI elements Position is the screen size divided by the gui scale. E.g. 1920x1080 with GUI scale 3 means Position for x will be [0,640] and for y [0,360].  
+Handles a few different things:
+* The Sun and Moon,
+* The worldborder, 
+* Most GUI textures (like the hotbar, buttons), 
+* Overlays (pumpkin blur, powder snow, the vignette),
+* The crosshair.
+
 <img src="https://github.com/McTsts/shaders/blob/main/images/position_tex.png" width=600>
 
 [Back to Top](#contents)
@@ -90,6 +96,7 @@ sun, moon, worldborder, gui texture, hotbar texture, powder snow overlay, vignet
 
 ### position_tex_color_normal 
 Clouds.  
+
 <img src="https://github.com/McTsts/shaders/blob/main/images/position_tex_color_normal.png" width=600>
 
 [Back to Top](#contents)
@@ -98,6 +105,7 @@ Clouds.
 
 ### position_color_tex 
 Fire overlay when the player is burning.  
+
 <img src="https://github.com/McTsts/shaders/blob/main/images/position_color_tex.png" width=600>
 
 [Back to Top](#contents)
@@ -106,6 +114,7 @@ Fire overlay when the player is burning.
 
 ### position_tex_color
 The End sky, main menu panorama, and menu backgrounds.
+
 <img src="https://github.com/McTsts/shaders/blob/main/images/position_tex_color.png" width=600>
 
 [Back to Top](#contents)
@@ -122,6 +131,7 @@ When dealing with block shaders which have something to do with `translucent`, `
 
 ### solid
 All solid blocks, lava, and when in fast mode, leaves. Also affects non-translucent falling blocks.
+
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_solid.png" width=400>
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_solid_2.png" width=400>
 
@@ -131,6 +141,7 @@ All solid blocks, lava, and when in fast mode, leaves. Also affects non-transluc
 
 ### cutout
 All non-cube-hitbox blocks, check the list in the section header.
+
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_cutout.png" width=600>
 
 [Back to Top](#contents)
@@ -139,6 +150,7 @@ All non-cube-hitbox blocks, check the list in the section header.
 
 ### cutout_mipped
 Certain blocks not covered by other shaders, check the list in the section header. Covers leaves in fancy/fabulous graphics.
+
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_cutout_mipped.png" width=600>
 
 [Back to Top](#contents)
@@ -147,6 +159,7 @@ Certain blocks not covered by other shaders, check the list in the section heade
 
 ### translucent
 Translucent blocks like stained glass, check the list in the section header.
+
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent.png" width=400>
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent_2.png" width=400>
 
@@ -156,6 +169,7 @@ Translucent blocks like stained glass, check the list in the section header.
 
 ### translucent_moving_block
 Blocks which are translucent and are being moved by a piston. The one below is stained glass.  
+
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent_moving_block.png" width=400>
 
 [Back to Top](#contents)
@@ -164,6 +178,7 @@ Blocks which are translucent and are being moved by a piston. The one below is s
 
 ### tripwire
 The middle section(s) of a tripwire.  
+
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_tripwire.png" width=600>
 
 [Back to Top](#contents)
@@ -173,6 +188,7 @@ The middle section(s) of a tripwire.
 ### end_portal (and end_gateway)
 The strange image in the end portal. Appears in end gateways, but not in the dimension background.
 The shader files are called `end_portal.vsh`/`fsh`/`json`, but `end_gateway.json` also exists but just uses the end_portal vsh/fsh.  
+
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_end_portal.png" width=400>
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_end_gateway.png" width=300>
 
@@ -200,6 +216,7 @@ Handles a few different things:
 * The f3+B hitbox displays,
 * The f3+G chunk border displays,
 * Previews in the structure block.
+
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_lines.png" width=300>
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_lines_2.png" width=400>
 
@@ -209,6 +226,7 @@ Handles a few different things:
 
 ### crumbling
 The block cracks when mining a block. Has some in-built transparency.  
+
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_crumbling.png" width=600>
 
 [Back to Top](#contents)
@@ -217,6 +235,7 @@ The block cracks when mining a block. Has some in-built transparency.
 
 ### beacon_beam
 The beam of a beacon. Seems to get rendered behind clouds.  
+
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_beacon_beam.png" width=300>
 
 [Back to Top](#contents)
