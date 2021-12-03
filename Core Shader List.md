@@ -49,8 +49,6 @@ The End sky, main menu panorama, and menu backgrounds.
 These are shaders which are targeted towards a specific element of the display.
 **For each shader name here, assume that it is prefixed with `rendertype_`.**
 
----
-
 ## Blocks
 ### solid
 All solid blocks, lava, and when in fast mode, leaves. Also affects non-translucent falling blocks
