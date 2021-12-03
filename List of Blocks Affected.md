@@ -1,4 +1,5 @@
 ### Anything not on this list is `solid`
+Original list by boq [here](https://gist.github.com/boq/4514320b590de1fbe84349d23b542b28)
 
 ## cutout_mipped
 - grass_block
