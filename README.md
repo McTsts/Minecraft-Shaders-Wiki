@@ -4,11 +4,11 @@ In the 1.17 snapshot 21w10a, more shader types were added for resource packs to 
 
 # Contents
 ## Core Shaders
-### [List of Core Shaders](https://github.com/McTsts/mc-shaders-info/blob/main/Core%20Shader%20List.md)
-### List of Includes (not complete)
+### [List of Core Shaders](Core%20Shader%20List.md)
+### [List of Includes](Includes.md)
 ### List of Uniforms (not complete)
 ​
 
 ## Utilities
-### [List of Utilities & Resources](https://github.com/McTsts/mc-shaders-info/blob/main/Utilities%20%26%20Resources.md)
+### [List of Utilities & Resources](Utilities%20%26%20Resources.md)
 ### Isolating specific elements within a shader (not complete)
