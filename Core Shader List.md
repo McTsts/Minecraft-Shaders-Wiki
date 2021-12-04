@@ -23,6 +23,8 @@ The part in brackets is a summary and not a full list of everything each shader 
     - [end_gateway](#end_portal-and-end_gateway) (End Gateway)
   - [Entities](#entities)
   - [UI](#ui)
+    - [text](#text) (Text)
+    - [text_see_through](#text_see_through) (Name Plates)
   - [Other](#other)
     - [lines](#lines) (Block Outline, Hitboxes, Fishing Rod Line)
     - [crumbling](#crumbling) (Mining Block Cracks)
