@@ -8,7 +8,7 @@ In the 1.17 snapshot 21w10a, more shader types were added for resource packs to 
 ## Core Shaders
 ### [List of Core Shaders](Core%20Shader%20List.md)
 ### [List of Includes](Includes.md)
-### List of Uniforms (not complete)
+### [List of Uniforms](Uniforms.md)
 ​
 
 ## Utilities
