@@ -199,7 +199,186 @@ The shader files are called `end_portal.vsh`/`fsh`/`json`, but `end_gateway.json
 ---
 
 ## Entities
-WIP
+Shaders that render entities.
+
+### entity_cutout_no_cull
+All entities, guardian beams, and shulker boxes (both placed and in inventory) and placed signs.
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout_no_cull.png" width=400> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout_no_cull_2.png" width=800>
+
+[Back to Top](#contents)
+
+---
+
+### entity_translucent
+Translucent entities and parts of entities: slimes, players (except lower layer of the arm in first person) and player heads, markings on horses, shulker bullets, elder guardian particle effect. Sampler1 contains the red color that is overlayed on entities when they take damage. 
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent.png" height=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent_2.png" height=200>
+
+[Back to Top](#contents)
+
+---
+
+### entity_solid
+Certain entities or entity-style objects: the base of banners, shulker heads, books on lecterns/enchantment tables, shields, beds, bell part of bells, capes, shells of conduits, paintings, tridents, the ears on the Deadmau5 skin.
+With item frames, the item frame entity itself is part of the shader, however items on it are not. Only the filled in parts of maps placed on an item frame are part of the shader.
+Also includes the first person bottom skin layer and the conduit item (in inventory).
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_solid.png" width=300> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_solid_2.png" width=300> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_solid_3.png" width=300>
+
+[Back to Top](#contents)
+
+---
+
+### entity_translucent_cull
+Flat texture items held by entities (and in the inventory). Only applies in non-Fabulous mode. Also affects translucent items in non-Fabulous mode, but does not affect normal glass or glass pan(If Fabulous is on see item_entity_translucent_cull)
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent_cull.png" height=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent_cull_2.png" height=200>
+
+[Back to Top](#contents)
+
+---
+
+### armor_cutout_no_cull
+Armour on entities.
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_armor_cutout_no_cull.png" width=300>
+
+[Back to Top](#contents)
+
+---
+
+### armor_entity_glint
+The glint on enchanted armour. Slight transparency is inbuilt and unchangeable.
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_armor_entity_glint.png" width=300>
+
+[Back to Top](#contents)
+
+---
+
+### energy_swirl
+Charged creeper and wither swirling outline.
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_energy_swirl.png" width=300> 
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_energy_swirl_2.png" width=300>
+
+[Back to Top](#contents)
+
+---
+
+### eyes
+A shader for the entire body of an entity that has glowing eyes (not the eyes themselves). This is not fully opaque.
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_eyes.png" height=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_eyes_2.png" height=200>
+
+[Back to Top](#contents)
+
+---
+
+### leash
+Leads on entities and fences.
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_leash.png" width=300> 
+
+[Back to Top](#contents)
+
+---
+
+### entity_shadow
+The blocks that are affected by an entity’s shadow, but not the shadow itself. This is locked to the block grid.
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_shadow.png" width=300> 
+
+[Back to Top](#contents)
+
+---
+
+### entity_cutout_no_cull_z_offset
+Mob skulls (but not player skulls) on entities and as an item. Also renders shulker's shell
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout_no_cull_z_offset.png" width=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout_no_cull_z_offset_2.png" width=200> 
+
+[Back to Top](#contents)
+
+---
+
+### entity_cutout
+Items in the inventory, head (e.g. of armor stands), hand, item frame, etc, that place blocks. Flat textures are covered by this if they place a block when used (e.g. redstone) ? Doesn’t seem to work with shulker boxes. Also targets chests in minecarts. Also the fire used by burning entities.
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout.png" width=300> 
+
+[Back to Top](#contents)
+
+---
+
+### entity_decal
+Colors the Ender Dragon while it’s dying.
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_decal.png" width=300> 
+
+[Back to Top](#contents)
+
+---
+
+
+### item_entity_translucent_cull
+Dropped items which are translucent (here is white stained glass). Only works in Fabulous mode. Does not work in inventory.
+Also affects invisible entities while using spectator mode or seeFriendlyInvisibles, works in any graphics mode. Also affects experience orbs, even on not fabulous.
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_item_entity_translucent_cull.png" width=300> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_item_entity_translucent_cull_2.png" width=300> 
+
+[Back to Top](#contents)
+
+---
+
+### entity_smooth_cutout
+End crystal beams.
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_smooth_cutout.png" width=300> 
+
+[Back to Top](#contents)
+
+---
+
+### entity_no_outline
+The color and pattern of banners.
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_no_outline.png" width=300> 
+
+[Back to Top](#contents)
+
+---
+
+### entity_alpha
+Used in the death animation of the dragon. Seemingly only affects the dragon’s wings, possibly messed with in code?
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_alpha.png" width=300> 
+
+[Back to Top](#contents)
+
+---
+
+
+### water_mask
+Hides the water in a boat. Changing the color does not seem to have an effect, but changing the position does. Pictured left is moving the mask down by 64, pictured right is moving it to the right by 2.
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_water_mask.png" width=300> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_water_mask_2.png" width=300> 
+
+[Back to Top](#contents)
+
+---
+
+### outline
+Glowing effect on entities. This buffer draws color on the entire entity, which is later turned into an outline by the entity_outline post shader.
+
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_outline.png" width=300> 
+
+[Back to Top](#contents)
+
+---
+
+
 
 ---
 
