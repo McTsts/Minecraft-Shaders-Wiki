@@ -295,7 +295,7 @@ The blocks that are affected by an entity’s shadow, but not the shadow itself.
 ---
 
 ### entity_cutout_no_cull_z_offset
-Mob skulls (but not player skulls) on entities and as an item. Also renders shulker's shell
+Mob skulls (but not player skulls) on entities and as an item. Also renders shulker's shell and minecarts
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout_no_cull_z_offset.png" width=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout_no_cull_z_offset_2.png" width=200> 
 
