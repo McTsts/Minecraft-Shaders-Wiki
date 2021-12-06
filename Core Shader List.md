@@ -211,7 +211,7 @@ All entities, guardian beams, and shulker boxes (both placed and in inventory) a
 ---
 
 ### entity_translucent
-Translucent entities and parts of entities: slimes, players (except lower layer of the arm in first person) and player heads, markings on horses, shulker bullets, elder guardian particle effect. Sampler1 contains the red color that is overlayed on entities when they take damage. 
+Translucent entities and parts of entities: slimes, players (except lower layer of the arm in first person) and player heads, markings on horses, shulker bullets, elder guardian particle effect. Sampler1 contains the red color that is overlayed on entities when they take damage.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent.png" height=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent_2.png" height=200>
 
@@ -389,14 +389,16 @@ These are shaders which affect some part of the UI. This is currently just text,
 All parts of text, including the shadow. This encompasses all text rendered including: F3 Menu, Menu button text, Entity names, Item names, descriptions & amounts in the inventory and the Chat etc. It also does the explored parts of maps
 
 #### Isolating Elements
-Isolating certain texts. Different types of text can be isolated using their Position.z. Texts without a shadow are located at x, texts with a shadow are located at x + 0.03 with their shadow being at x. (e.g. at 0.0 and 0.03). A basic list of where which text is located:
--200: Advancement menu text
-0: Most gui text
-100: Chat display
-200: Item count in hotbar
-300: Item count in inventory
-400: Item count while dragging item, tooltip texts
-0 to 104: Maps (not actually text)
+Isolating certain texts. Different types of text can be isolated using their Position.z. Texts without a shadow are located at x, texts with a shadow are located at x + 0.03 with their shadow being at x. (e.g. at 0.0 and 0.03).
+
+A basic list of where which text is located:
+* -200: Advancement menu text
+* 0: Most gui text
+* 100: Chat display
+* 200: Item count in hotbar
+* 300: Item count in inventory
+* 400: Item count while dragging item, tooltip texts
+* 0 to 104: Maps (not actually text)
 
 Since maps share the z value with the chat display and a part of the hotbar item count, you can test for Sampler0 having a size of 128 pixels in both directions to test for the face being a map.
 
