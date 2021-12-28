@@ -52,7 +52,7 @@ Blit copies one buffer to another, however this cannot be overridden in a resour
 ---
 
 ### particle  
-All particles. The alpha value specified in the shader will override the particle’s inbuilt transparency e.g. in the sneeze particle. Others, like the splash particle, don't seem to allow this. More testing needed.
+Weather (snow and rain) and all particles. The alpha value specified in the shader will override the particle’s inbuilt transparency e.g. in the sneeze particle. Others, like the splash particle, don't seem to allow this. More testing needed.
 
 [Back to Top](#contents)
 
