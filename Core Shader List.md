@@ -41,6 +41,7 @@ The part in brackets is a summary and not a full list of everything each shader 
     - [entity_no_outline](#entity_no_outline) (Banner)
     - [water_mask](#water_mask) (Hides water in boats)
     - [outline](#outline) (Glowing)
+    - [lightning](#lightning) (Lightning)
   - [UI](#ui)
     - [text](#text) (Text)
     - [text_see_through](#text_see_through) (Name Plates)
@@ -391,6 +392,13 @@ Hides the water in a boat. Changing the color does not seem to have an effect, b
 Glowing effect on entities. This buffer draws color on the entire entity, which is later turned into an outline by the entity_outline post shader.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_outline.png" width=300> 
+
+[Back to Top](#contents)
+
+---
+
+### lightning
+Lightning bolts.
 
 [Back to Top](#contents)
 
