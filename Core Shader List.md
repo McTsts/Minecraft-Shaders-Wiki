@@ -260,8 +260,7 @@ The glint on enchanted armour. Slight transparency is inbuilt and unchangeable.
 ### energy_swirl
 Charged creeper and wither swirling outline.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_energy_swirl.png" width=300> 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_energy_swirl_2.png" width=300>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_energy_swirl.png" height=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_energy_swirl_2.png" height=200>
 
 [Back to Top](#contents)
 
