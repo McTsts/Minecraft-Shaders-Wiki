@@ -420,6 +420,7 @@ Isolating certain texts. Different types of text can be isolated using their Pos
 A basic list of where which text is located:
 * -200: Advancement menu text
 * 0: Most gui text
+* 0.03: Menu (pause/options) text and inventory Potion effect text
 * 100: Chat display
 * 200: Item count in hotbar
 * 300: Item count in inventory
