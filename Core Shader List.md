@@ -417,9 +417,9 @@ All parts of text, including the shadow. This encompasses all text rendered incl
 #### Isolating Elements
 Isolating certain texts. Different types of text can be isolated using their Position.z. Texts without a shadow are located at x, texts with a shadow are located at x + 0.03 with their shadow being at x. (e.g. at 0.0 and 0.03).
 
-A basic list of where which text is located:
+A basic list of where which text is located: (Not Complete!)
 * -200: Advancement menu text
-* 0: Most gui text
+* 0: /title text, world/server selection name/description text, resourcepack selection "Available" and "Selected" text.
 * 0.03: Menu (pause/options) text and inventory Potion effect text
 * 100: Chat display
 * 200: Item count in hotbar
