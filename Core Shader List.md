@@ -419,7 +419,7 @@ Isolating certain texts. Different types of text can be isolated using their Pos
 
 A basic list of where which text is located: (Not Complete!)
 * -200: Advancement menu text
-* 0: /title text, world/server selection name/description text, resourcepack selection "Available" and "Selected" text.
+* 0: /title text, bossbar name, world/server selection name/description text, resourcepack selection "Available" and "Selected" text.
 * 0.03: Menu (pause/options) text and inventory Potion effect text
 * 100: Chat display
 * 200: Item count in hotbar
