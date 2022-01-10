@@ -191,7 +191,7 @@ A list of all blocks rendered by this shader can be found [here](List%20of%20Blo
 ---
 
 ### translucent_moving_block
-Blocks which are translucent and are being moved by a piston. The one below is stained glass.  
+Blocks which are translucent and are being moved by a piston.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent_moving_block.png" width=400>
 
@@ -209,8 +209,8 @@ The middle section(s) of a tripwire.
 ---
 
 ### end_portal (and end_gateway)
-The strange image in the end portal. Appears in end gateways, but not in the dimension background.
-The shader files are called `end_portal.vsh`/`fsh`/`json`, but `end_gateway.json` also exists but just uses the end_portal vsh/fsh.  
+The strange image in the end portal and end gateways.
+The shader files are called `end_portal.vsh`/`fsh`/`json`, with `end_gateway.json` referencing them.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_end_portal.png" width=400> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_end_gateway.png" width=300>
 
@@ -222,7 +222,7 @@ The shader files are called `end_portal.vsh`/`fsh`/`json`, but `end_gateway.json
 Shaders that render entities.
 
 ### entity_cutout_no_cull
-All entities, guardian beams, and shulker boxes (both placed and in inventory) and placed signs.
+All entities, guardian beams, placed signs, and shulker boxes (both placed and in inventory)
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout_no_cull.png" width=400> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout_no_cull_2.png" width=800>
 
@@ -231,7 +231,15 @@ All entities, guardian beams, and shulker boxes (both placed and in inventory) a
 ---
 
 ### entity_translucent
-Translucent entities and parts of entities: slimes, players (except lower layer of the arm in first person) and player heads, markings on horses, shulker bullets, elder guardian particle effect. Sampler1 contains the red color that is overlayed on entities when they take damage.
+Translucent entities and parts of entities: 
+* Slimes,
+* Players (except for the lower layer of the arm in first person),
+* Player heads, 
+* Markings on horses, 
+* Shulker bullets, 
+* Elder guardian particle effect. 
+
+Sampler1 contains the red color that is overlayed on entities when they take damage.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent.png" height=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent_2.png" height=200>
 
@@ -240,9 +248,22 @@ Translucent entities and parts of entities: slimes, players (except lower layer 
 ---
 
 ### entity_solid
-Certain entities or entity-style objects: the base of banners, shulker heads, books on lecterns/enchantment tables, shields, beds, bell part of bells, capes, shells of conduits, paintings, tridents, the ears on the Deadmau5 skin.
-With item frames, the item frame entity itself is part of the shader, however items on it are not. Only the filled in parts of maps placed on an item frame are part of the shader.
-Also includes the first person bottom skin layer and the conduit item (in inventory).
+Handles a few different things: 
+* The base (not flag) of banners,
+* Shulker heads, 
+* Books on lecterns/enchantment tables, 
+* Shields, 
+* Beds, 
+* The bell part of bells, 
+* Capes, 
+* Shells of conduits, 
+* Paintings, 
+* Tridents, 
+* The ears on the Deadmau5 skin,
+* The bottom skin layer of the first-person hand,
+* The conduit item in the inventory.
+
+With item frames, the item frame entity itself is part of the shader, however, items on it are not. Only the filled-in parts of maps placed on an item frame are part of the shader.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_solid.png" width=300> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_solid_2.png" width=300> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_solid_3.png" width=300>
 
@@ -251,9 +272,9 @@ Also includes the first person bottom skin layer and the conduit item (in invent
 ---
 
 ### entity_translucent_cull
-Flat texture items held by entities (and in the inventory). Only applies in non-Fabulous mode. Also affects translucent items in non-Fabulous mode, but does not affect normal glass or glass pan(If Fabulous is on see item_entity_translucent_cull)
+Flat texture items held by entities (and in the inventory). If Fabulous graphics is off, this shader also affects translucent items like stained glass and their panes, however if it is on, you should check [item_entity_translucent_cull](#item_entity_translucent_cull).
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent_cull.png" height=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent_cull_2.png" height=200>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translubucent_cull.png" height=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent_cull_2.png" height=200>
 
 [Back to Top](#contents)
 
@@ -287,7 +308,7 @@ Charged creeper and wither swirling outline.
 ---
 
 ### eyes
-A shader for the entire body of an entity that has glowing eyes (not the eyes themselves). This is not fully opaque.
+A shader for the entire body of an entity that has glowing eyes (not the eyes themselves). Not fully opaque.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_eyes.png" height=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_eyes_2.png" height=200>
 
@@ -296,7 +317,7 @@ A shader for the entire body of an entity that has glowing eyes (not the eyes th
 ---
 
 ### leash
-Leads on entities and fences.
+Leads, both on entities and fences.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_leash.png" width=300> 
 
@@ -305,7 +326,7 @@ Leads on entities and fences.
 ---
 
 ### entity_shadow
-The blocks that are affected by an entity’s shadow, but not the shadow itself. This is locked to the block grid.
+Blocks that are affected by an entity’s shadow, but not the shadow itself. Locked to the block grid.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_shadow.png" width=300> 
 
@@ -314,7 +335,7 @@ The blocks that are affected by an entity’s shadow, but not the shadow itself.
 ---
 
 ### entity_cutout_no_cull_z_offset
-Mob skulls (but not player skulls) on entities and as an item. Also renders shulker's shell and minecarts
+Mob skulls, both on entities and as an item. Does not include player heads. Also handles shulker shells and minecarts.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout_no_cull_z_offset.png" width=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout_no_cull_z_offset_2.png" width=200> 
 
@@ -323,7 +344,7 @@ Mob skulls (but not player skulls) on entities and as an item. Also renders shul
 ---
 
 ### entity_cutout
-Items in the inventory, head (e.g. of armor stands), hand, item frame, etc, that place blocks. Flat textures are covered by this if they place a block when used (e.g. redstone) ? Doesn’t seem to work with shulker boxes. Also targets chests in minecarts. Also the fire used by burning entities.
+Block items in the inventory or hand/head of an entity, as well as chests in minecarts. Does not include Shulker boxes (see [entity_cutout_no_cull](#entity_cutout_no_cull)). Also used for the fire overlay on burning entities.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout.png" width=300> 
 
@@ -342,8 +363,7 @@ Colors the Ender Dragon while it’s dying.
 
 
 ### item_entity_translucent_cull
-Dropped items which are translucent (here is white stained glass). Only works in Fabulous mode. Does not work in inventory.
-Also affects invisible entities while using spectator mode or seeFriendlyInvisibles, works in any graphics mode. Also affects experience orbs, even on not fabulous.
+Handles dropped translucent items in Fabulous mode. Also affects invisible entities while using spectator mode or the gamerule `seeFriendlyInvisibles`, as well as experience orbs. These uses apply to all graphics settings.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_item_entity_translucent_cull.png" width=300> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_item_entity_translucent_cull_2.png" width=300> 
 
