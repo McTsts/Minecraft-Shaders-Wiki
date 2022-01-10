@@ -2,10 +2,11 @@
 Includes are special core shaders that contain shared code between different shaders, which all use the .glsl file extension This page will document them and their uses.
 
 ## fog
-Contains two functions:
+Contains three functions:
 
 `linear_fog()`: Tints a pixel based on its passed-in vertexDistance value.
-`linear_fog_fade()`: Oasses out how faded a pixel should be, using similar logic to `linear_fog()`.
+`linear_fog_fade()`: Passes out how faded a pixel should be, using similar logic to `linear_fog()`.
+`cylindrical_distance()`: Used after 1.18.1 to calculate vertexDistance rather than a simple length function, giving fog a cylindrical shape.
 
 ## light
 Contains two functions:
