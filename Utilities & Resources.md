@@ -7,7 +7,7 @@ A fabric mod that allows reloading shaders without having to reload the resource
 ## [Ancientkingg's Fancy Pants](https://github.com/Ancientkingg/fancyPants)
 Fancy Pants is a shader for 1.17 vanilla minecraft that allows datapack developers to add custom armor to minecraft by using leather armor
 
-## [ShockMicro's Vanilla Dynamic Emissives](https://github.com/ShockMicro/VanillaDynamicEmissives/)
+## [Shock Micro's VanillaDynamicEmissives](https://github.com/ShockMicro/VanillaDynamicEmissives/)
 Allows for dynamic emissive textures in vanilla Minecraft.
 
 ## Ancientkingg's gl_VertexID reference
