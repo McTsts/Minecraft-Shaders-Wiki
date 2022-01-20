@@ -4,6 +4,7 @@ In the 1.17 snapshot 21w10a, more shader types were added for resource packs to 
 
 # Contents
 ## Basics (not complete)
+You can find an explanation of vanilla shaders in [this](https://docs.google.com/document/d/15TOAOVLgSNEoHGzpNlkez5cryH3hFF3awXL5Py81EMk/edit) document.
 
 ## Core Shaders
 ### [List of Core Shaders](Core%20Shader%20List.md)
