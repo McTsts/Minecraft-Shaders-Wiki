@@ -272,7 +272,7 @@ With item frames, the item frame entity itself is part of the shader, however, i
 ---
 
 ### entity_translucent_cull
-Flat texture items held by entities (and in the inventory). If Fabulous graphics is off, this shader also affects translucent items like stained glass and their panes, however if it is on, you should check [item_entity_translucent_cull](#item_entity_translucent_cull).
+Flat texture items and transparent blocks held by entities or on head, and in the inventory. If Fabulous graphics is off, this shader also affects translucent items like stained glass and their panes, however if it is on, you should check [item_entity_translucent_cull](#item_entity_translucent_cull).
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translubucent_cull.png" height=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent_cull_2.png" height=200>
 
@@ -363,7 +363,7 @@ Colors the Ender Dragon while it’s dying.
 
 
 ### item_entity_translucent_cull
-Handles dropped translucent items in Fabulous mode. Also affects invisible entities while using spectator mode or the gamerule `seeFriendlyInvisibles`, as well as experience orbs. These uses apply to all graphics settings.
+Handles dropped translucent items in Fabulous graphics. Also affects invisible entities while using spectator mode or the gamerule `seeFriendlyInvisibles`, as well as experience orbs in all graphics settings.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_item_entity_translucent_cull.png" width=300> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_item_entity_translucent_cull_2.png" width=300> 
 
