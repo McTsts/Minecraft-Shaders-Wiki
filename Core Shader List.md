@@ -444,7 +444,7 @@ A basic list of where which text is located: (Not Complete!)
 * 100: Chat display
 * 200: Item count in hotbar
 * 300: Item count in inventory
-* 400: Item count while dragging item, tooltip texts
+* 400: Item count while dragging item, tooltip texts, compact potion info
 * 0 to 104: Maps (not actually text)
 
 Since maps share the z value with the chat display and a part of the hotbar item count, you can test for Sampler0 having a size of 128 pixels in both directions to test for the face being a map.
