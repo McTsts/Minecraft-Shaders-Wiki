@@ -28,7 +28,9 @@ The part in brackets is a summary and not a full list of everything each shader 
     - [entity_translucent_cull](#entity_translucent_cull) (Non-block-placing Items)
     - [entity_cutout](#entity_cutout) (Block-placing Items)
     - [armor_cutout_no_cull](#armor_cutout_no_cull) (Armor)
-    - [armor_entity_glint](#armor_entity_glint) (Enchant Glint)
+    - [armor_entity_glint](#armor_entity_glint) (Worn Armor Enchant Glint)
+    - [glint](#glint) (Glass Enchant Glint)
+    - [glint_direct](#glint_direct) (Standard Enchant Glint)
     - [energy_swirl](#energy_swirl) (Charged Creeper, Wither Swirl)
     - [eyes](#eyes) (Entities with glowing eyes)
     - [leash](#leash) (Leash)
@@ -293,6 +295,20 @@ Armour on entities.
 The glint on enchanted armour. Slight transparency is inbuilt and unchangeable.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_armor_entity_glint.png" width=300>
+
+[Back to Top](#contents)
+
+---
+
+### glint
+The glint on (stained) glass and (stained) glass panes, while rendered in the world. That means as dropped item, in an item frame, when held (except for when you're holding it yourself and are in first person view (default)). Does *not* render glass in inventory or when held in first person view, in those cases it's rendered by `glint_direct`. 
+
+[Back to Top](#contents)
+
+---
+
+### glint_direct
+The enchant glint in most situations. Enchanted worn armor is rendered by `armor_entity_glint` and glass type blocks are rendered by `glint` when in world instead.
 
 [Back to Top](#contents)
 
