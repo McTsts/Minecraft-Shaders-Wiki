@@ -11,6 +11,9 @@ gl_VertexID order in core shaders, where 0,0 is center of rectangle and 0 is -1,
 
 <img src="https://cdn.discordapp.com/attachments/157097006500806656/830137818742390784/unknown.png" width=300px>
 
+## [Godlander's .obj model renderer](https://github.com/Godlander/objmc)
+A python script to convert .OBJ files into Minecraft, rendering them in game with a core shader.
+
 # Examples
 
 ## [Ancientkingg's Fancy Pants](https://github.com/Ancientkingg/fancyPants)
