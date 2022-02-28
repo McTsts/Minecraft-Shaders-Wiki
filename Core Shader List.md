@@ -89,7 +89,7 @@ The colour of the sky. Also affects text highlighting.
 
 ### position_color
 Handles a few different things:
-* The black transparent background on UI elements such as the chat field or the pause menu,
+* The black transparent background on UI elements such as the chat field, the pause menu, and the scoreboard sidebar,
 * The Mojang loading background,
 * Highlighting item slots,
 * The background of tooltips,
