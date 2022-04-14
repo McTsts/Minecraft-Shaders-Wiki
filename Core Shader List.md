@@ -457,7 +457,7 @@ A basic list of where which text is located: (Not Complete!)
 * -200: Advancement menu text
 * 0: /title text, bossbar name, world/server selection name/description text, resourcepack selection "Available" and "Selected" text.
 * 0.03: Menu (pause/options) text and inventory Potion effect text
-* 100: Chat display
+* 100: Chat display, Recipe book search text
 * 200: Item count in hotbar
 * 300: Item count in inventory
 * 400: Item count while dragging item, tooltip texts, compact potion info
