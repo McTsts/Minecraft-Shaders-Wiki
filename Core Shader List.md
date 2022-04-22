@@ -38,7 +38,7 @@ The part in brackets is a summary and not a full list of everything each shader 
     - [entity_cutout_no_cull_z_offset](#entity_cutout_no_cull_z_offset) (Mob Skulls, Minecart, Shulker)
     - [entity_decal](#entity_decal) (Ender Dragon Death)
     - [entity_alpha](#entity_alpha) (Ender Dragon Death Wings)
-    - [item_entity_translucent_cull](#item_entity_translucent_cull) (XP Orbs, Fabolous translucent items)
+    - [item_entity_translucent_cull](#item_entity_translucent_cull) (XP Orbs, Fabolous translucent items, Invisible Entities)
     - [entity_smooth_cutout](#entity_smooth_cutout) (End Crystal Beams)
     - [entity_no_outline](#entity_no_outline) (Banner)
     - [water_mask](#water_mask) (Hides water in boats)
