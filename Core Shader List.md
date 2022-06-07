@@ -40,6 +40,7 @@ The part in brackets is a summary and not a full list of everything each shader 
     - [entity_alpha](#entity_alpha) (Ender Dragon Death Wings)
     - [item_entity_translucent_cull](#item_entity_translucent_cull) (XP Orbs, Fabolous translucent items, Invisible Entities)
     - [entity_smooth_cutout](#entity_smooth_cutout) (End Crystal Beams)
+    - [entity_smooth_cutout](#entity_translucent_emissive) (Glowing parts of Warden texture)
     - [entity_no_outline](#entity_no_outline) (Banner)
     - [water_mask](#water_mask) (Hides water in boats)
     - [outline](#outline) (Glowing)
@@ -382,6 +383,15 @@ Colors the Ender Dragon while it’s dying.
 Handles dropped translucent items in Fabulous graphics. Also affects invisible entities while using spectator mode or the gamerule `seeFriendlyInvisibles`, as well as experience orbs in all graphics settings.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_item_entity_translucent_cull.png" width=300> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_item_entity_translucent_cull_2.png" width=300> 
+
+[Back to Top](#contents)
+
+---
+
+### entity_translucent_emissive
+Glowing parts of Warden texture.
+
+![image](https://user-images.githubusercontent.com/16228717/172488347-e17307b9-7ddf-4668-a464-9b606aad50aa.png)
 
 [Back to Top](#contents)
 
