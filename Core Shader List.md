@@ -40,7 +40,7 @@ The part in brackets is a summary and not a full list of everything each shader 
     - [entity_alpha](#entity_alpha) (Ender Dragon Death Wings)
     - [item_entity_translucent_cull](#item_entity_translucent_cull) (XP Orbs, Fabolous translucent items, Invisible Entities)
     - [entity_smooth_cutout](#entity_smooth_cutout) (End Crystal Beams)
-    - [entity_smooth_cutout](#entity_translucent_emissive) (Glowing parts of Warden texture)
+    - [entity_translucent_emissive](#entity_translucent_emissive) (Glowing parts of Warden texture)
     - [entity_no_outline](#entity_no_outline) (Banner)
     - [water_mask](#water_mask) (Hides water in boats)
     - [outline](#outline) (Glowing)
