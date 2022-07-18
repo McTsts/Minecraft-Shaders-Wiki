@@ -275,7 +275,7 @@ With item frames, the item frame entity itself is part of the shader, however, i
 ---
 
 ### entity_translucent_cull
-Flat texture items and transparent blocks held by entities or on head, and in the inventory. If Fabulous graphics is off, this shader also affects translucent items like stained glass and their panes, however if it is on, you should check [item_entity_translucent_cull](#item_entity_translucent_cull).
+Flat texture items and transparent blocks held by entities or on head, in the inventory, and as entities. If Fabulous graphics is off, this shader also affects translucent items like stained glass and their panes, however if it is on, you should check [item_entity_translucent_cull](#item_entity_translucent_cull).
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translubucent_cull.png" height=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent_cull_2.png" height=200>
 
@@ -361,7 +361,7 @@ Mob skulls, both on entities and as an item. Does not include player heads. Also
 ---
 
 ### entity_cutout
-Block items in the inventory or hand/head of an entity, as well as chests in minecarts. Does not include Shulker boxes (see [entity_cutout_no_cull](#entity_cutout_no_cull)). Also used for the fire overlay on burning entities.
+Block items in the inventory or hand/head of an entity, as well as chests in minecarts, also as entities. Does not include Shulker boxes (see [entity_cutout_no_cull](#entity_cutout_no_cull)). Also used for the fire overlay on burning entities.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout.png" width=300> 
 
