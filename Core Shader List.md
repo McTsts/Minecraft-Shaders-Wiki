@@ -114,6 +114,8 @@ Handles a few different things:
 * The crosshair.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/position_tex.png" width=600>
+Also pumpkin blur, crosshair, skin player in tab and mojang logo
+<img src="https://github.com/McTsts/shaders/blob/main/images/position_tex2.png" width=600>
 
 [Back to Top](#contents)
 
