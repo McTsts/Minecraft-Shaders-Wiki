@@ -112,6 +112,7 @@ Handles a few different things:
 * Most GUI textures (like the hotbar, buttons), 
 * Overlays (pumpkin blur, powder snow, the vignette),
 * The crosshair.
+* The mojang logo in loading screens.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/position_tex.png" width=600>
 
