@@ -44,7 +44,7 @@ The part in brackets is a summary and not a full list of everything each shader 
     - [entity_no_outline](#entity_no_outline) (Banner)
     - [water_mask](#water_mask) (Hides water in boats)
     - [outline](#outline) (Glowing)
-    - [lightning](#lightning) (Lightning)
+    - [lightning](#lightning) (Lightning, Ender dragon death animation beams)
   - [UI](#ui)
     - [text](#text) (Text)
     - [text_see_through](#text_see_through) (Name Plates)
@@ -446,6 +446,7 @@ Glowing effect on entities. This buffer draws color on the entire entity, which 
 
 ### lightning
 Lightning bolts.
+Ender dragon death animation beams.
 
 [Back to Top](#contents)
 
