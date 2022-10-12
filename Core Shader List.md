@@ -362,7 +362,7 @@ Mob skulls, both on entities and as an item. Does not include player heads. Also
 ---
 
 ### entity_cutout
-Block items in the inventory or hand/head of an entity, chests, chests in minecarts, and as entities. Does not include Shulker boxes (see [entity_cutout_no_cull](#entity_cutout_no_cull)). Also used for the fire overlay on burning entities.
+Block items in the inventory or hand/head of an entity, chests, ender chests, chest in minecarts, and as entities. Does not include Shulker boxes (see [entity_cutout_no_cull](#entity_cutout_no_cull)). Also used for the fire overlay on burning entities.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout.png" width=300> 
 
