@@ -95,7 +95,8 @@ Handles a few different things:
 * Highlighting item slots,
 * The background of tooltips,
 * The transparent lower hemisphere overlay on the sky approximately between times 11315 to 14150 (sunset) and 21830 to 24670 (sunrise),
-* The black bars on the sides when scoped in with a spyglass.
+* The black bars on the sides when scoped in with a spyglass,
+* The f3+G chunk border displays.
 
 For UI elements, Position is the screen size divided by the GUI scale. E.g. 1920x1080 with GUI scale 3 means Position for x will be [0,640] and for y [0,360].
 
@@ -500,7 +501,6 @@ Handles a few different things:
 * The outline when hovering over a block,
 * The debug crosshair,
 * The f3+B hitbox displays,
-* The f3+G chunk border displays,
 * Previews in the structure block.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_lines.png" width=300> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_lines_2.png" width=400>
