@@ -2,7 +2,8 @@
 Uniforms are variables passed to core shaders that help determine their behavior.
 
 ## GameTime
-GameTime increments indefinitely in core shaders. It seems to be synchronized with the server and thus between players. This can be observed by lagging the server. It has been observed that fract(GameTime * 1200) loops around roughly each second.
+Gametime is constantly incrementing in core shaders. It's synchronized with the server and thus between players. It is affected by tick lag and not very consistent. It ranges from 0 to 1, repeating every 24000 ticks (20 minutes). This means `fract(GameTime * 1200)` loops around roughly each second.
+The game calculates this value as `((float)(time % 24000L) + tickDelta) / 24000.0F`, with `time` being the integer value you can get from `/time query gametime` and `tickDelta` providing subtick timing.
 
 ## Fog
 ### FogColor
