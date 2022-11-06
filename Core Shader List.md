@@ -61,6 +61,7 @@ The part in brackets is a summary and not a full list of everything each shader 
   - [rendertype_text_intensity](#rendertype_text_intensity)
   - [rendertype_text_intensity_see_through](#rendertype_text_intensity_see_through)
   - [rendertype_armor_glint](#rendertype_armor_glint)
+  - [rendertype_translucent_no_crumbling](#rendertype_translucent_no_crumbling)
 - [Unused](#unused)
   - [position_color_normal](#position_color_normal)
 
@@ -579,6 +580,13 @@ Functionally the same as `rendertype_text_see_through`, except it uses the red v
 ---
 
 ### rendertype_armor_glint
+Unknown.
+
+[Back to Top](#contents)
+
+---
+
+### rendertype_translucent_no_crumbling
 Unknown.
 
 [Back to Top](#contents)
