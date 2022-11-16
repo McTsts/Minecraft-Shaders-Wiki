@@ -69,7 +69,7 @@ The part in brackets is a summary and not a full list of everything each shader 
 There are several shaders which are not prefixed with `rendertype_`. These seem to be for more general targets, such as the sky or all particles.  
 
 ### blit_screen  
-Blit copies one buffer to another, however this cannot be overridden in a resource pack. 
+Blit copies one buffer to another, however this cannot be overridden in a resource pack.
 
 [Back to Top](#contents)
 
