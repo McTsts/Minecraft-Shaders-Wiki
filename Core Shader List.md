@@ -287,7 +287,7 @@ Flat texture items and transparent blocks held by entities or on head, in the in
 ---
 
 ### armor_cutout_no_cull
-Armour on entities.
+Armor and armor trims on entities.
 
 <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_armor_cutout_no_cull.png" width=300>
 
