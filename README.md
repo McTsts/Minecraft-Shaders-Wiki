@@ -17,5 +17,5 @@ The currently WIP basics section can be found [here](https://github.com/McTsts/M
 
 ## Utilities
 ### [List of Utilities & Resources](Utilities%20%26%20Resources.md)
-### Isolating specific elements within a shader (not complete)
+### [Isolating specific elements within a shader](Isolating%20Items.md)
 ### Transmitting Data (not complete)
