@@ -7,7 +7,7 @@ Some shaders also affect items in inventories or other components in GUIs. To pr
 
 Also you can isolate gui components by `ProjMat[3].x == -1`.
 
-## Table of depths for GUI components (items)
+### Table of depths for GUI components (items)
 <table>
 <thead>
   <tr>
