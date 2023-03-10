@@ -31,6 +31,7 @@ The part in brackets is a summary and not a full list of everything each shader 
     - [armor_entity_glint](#armor_entity_glint) (Worn Armor Enchant Glint)
     - [glint](#glint) (Glass Enchant Glint)
     - [glint_direct](#glint_direct) (Standard Enchant Glint)
+    - [glint_translucent](#glint_translucent) (Glass enchanted glint in `Fabolous!`)
     - [energy_swirl](#energy_swirl) (Charged Creeper, Wither Swirl)
     - [eyes](#eyes) (Entities with glowing eyes)
     - [leash](#leash) (Leash)
@@ -313,6 +314,15 @@ The glint on (stained) glass and (stained) glass panes, while rendered in the wo
 
 ### glint_direct
 The enchant glint in most situations. Enchanted worn armor is rendered by `armor_entity_glint` and glass type blocks are rendered by `glint` when in world instead.
+
+[Back to Top](#contents)
+
+---
+
+### glint_translucent
+The enchant glint in translucent blocks (like stained glass) in world when graphics setting is `Fabolous!`.
+
+<img src="images/rendertype_glint_translucent.png" width=200> 
 
 [Back to Top](#contents)
 
