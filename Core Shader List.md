@@ -243,16 +243,19 @@ Shaders that render entities.
 
 ### entity_translucent
 Translucent entities and parts of entities: 
-* Slimes,
-* Players (except for the lower layer of the arm in first person),
-* Player heads (if player has set a custom skin), 
-* Markings on horses, 
-* Shulker bullets, 
-* Elder guardian particle effect. 
+* Slimes
+* Players (except for the lower layer of the arm in first person)
+* Player heads (if player has set a custom skin)
+* Markings on horses
+* Some other horses parts
+* Shulker bullets
+* Elder guardian particle effect
+* Piglin
+* Zombified Piglin
 
 Sampler1 contains the red color that is overlayed on entities when they take damage.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent.png" height=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent_2.png" height=200>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent.png" height=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent_2.png" height=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent_3.png" height=200>
 
 [Back to Top](#contents)
 
