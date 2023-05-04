@@ -229,9 +229,13 @@ The shader files are called `end_portal.vsh`/`fsh`/`json`, with `end_gateway.jso
 Shaders that render entities.
 
 ### entity_cutout_no_cull
-All entities, guardian beams, placed signs, and shulker boxes (both placed and in inventory)
+* All entities
+* Guardian beams
+* Placed signs
+* Shulker boxes (both placed and in inventory)
+* Player heads (if player is using one of the default Minecraft skins: Alex, Steve, etc.)
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout_no_cull.png" width=400> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout_no_cull_2.png" width=800>
+<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout_no_cull.png" width=400> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout_no_cull_2.png" width=800> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout_no_cull_3.png" width=200>
 
 [Back to Top](#contents)
 
@@ -241,7 +245,7 @@ All entities, guardian beams, placed signs, and shulker boxes (both placed and i
 Translucent entities and parts of entities: 
 * Slimes,
 * Players (except for the lower layer of the arm in first person),
-* Player heads, 
+* Player heads (if player has set a custom skin), 
 * Markings on horses, 
 * Shulker bullets, 
 * Elder guardian particle effect. 
