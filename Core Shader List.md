@@ -475,12 +475,14 @@ These are shaders which affect some part of the UI. This is currently just text,
 All parts of text, including the shadow. This encompasses all text rendered including: F3 Menu, Menu button text, Entity names, Item names, descriptions & amounts in the inventory and the Chat etc. It also does the explored parts of maps
 
 #### Isolating Elements
-Isolating certain texts. Different types of text can be isolated using their Position.z. Texts without a shadow are located at x, texts with a shadow are located at x + 0.03 with their shadow being at x. (e.g. at 0.0 and 0.03).
+Isolating certain texts. Different types of text can be isolated using their Position.z. Texts without a shadow are located at x, texts with a shadow are located at x + 0.03 with their shadow being at x. (e.g. at 0.0 and 0.03). *This seems to no longer be true in 1.19.4*
 
-A basic list of where which text is located: (Not Complete!)
+A basic list of where which text is located: (Not Complete! *Last checked in 1.18, unless noted otherwise*)
 * -200: Advancement menu text
 * 0: /title text, bossbar name, world/server selection name/description text, resourcepack selection "Available" and "Selected" text.
 * 0.03: Menu (pause/options) text and inventory Potion effect text
+* 0.06 [1.19.4]: Subtitle Text (shadow at 0.0)
+* 0.12 [1.19.4]: Title Text (shadow at 0.0)
 * 100: Chat display, Recipe book search text
 * 200: Item count in hotbar
 * 300: Item count in inventory
