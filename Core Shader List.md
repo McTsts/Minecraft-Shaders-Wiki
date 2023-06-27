@@ -29,6 +29,7 @@ The part in brackets is a summary and not a full list of everything each shader 
     - [entity_cutout](#entity_cutout) (Block-placing Items)
     - [armor_cutout_no_cull](#armor_cutout_no_cull) (Armor)
     - [armor_entity_glint](#armor_entity_glint) (Worn Armor Enchant Glint)
+    - [entity_glint_direct](#entity_glint_direct)
     - [glint](#glint) (Glass Enchant Glint)
     - [glint_direct](#glint_direct) (Standard Enchant Glint)
     - [glint_translucent](#glint_translucent) (Glass enchanted glint in `Fabolous!`)
@@ -316,6 +317,15 @@ The glint on enchanted armour. Slight transparency is inbuilt and unchangeable.
 
 ---
 
+### entity_glint_direct
+The glint on enchanted tridents.
+
+<img src="images/rendertype_entity_glint_direct.png" width=300>
+
+[Back to Top](#contents)
+
+---
+
 ### glint
 The glint on (stained) glass and (stained) glass panes, while rendered in the world. That means as dropped item, in an item frame, when held (except for when you're holding it yourself and are in first person view (default)). Does *not* render glass in inventory or when held in first person view, in those cases it's rendered by `glint_direct`. 
 
@@ -490,12 +500,19 @@ These are shaders which affect some part of the UI. Some UI elements are rendere
 * World loading animation
 * Crafting red missing item background (when using recipe book)
 
+<img src="images/rendertype_gui.png" width=300> <img src="images/rendertype_gui_2.png" width=300> 
+
 [Back to Top](#contents)
 
 ---
 
 ### gui_ghost_recipe_overlay
 * Crafting translucent missing item overlay (when using recipe book)
+
+<figure>
+  <img src="images/rendertype_gui_ghost_recipe_overlay.png" width=300> 
+  <figcaption>*highlighted in green for better contrast*</figcaption>
+</figure>
 
 [Back to Top](#contents)
 
@@ -513,6 +530,8 @@ These are shaders which affect some part of the UI. Some UI elements are rendere
 
 ### gui_text_highlight
 * All highlighted/selected text
+
+<img src="images/rendertype_gui_text_highlight.png" width=300> 
 
 [Back to Top](#contents)
 
@@ -574,6 +593,8 @@ Since maps share the z value with the chat display and a part of the hotbar item
 ### text_intensity
 * Behaves like rendertype_text but when TTF font is used in the resourcepack
 * See [text](#text)
+
+<img src="images/rendertype_text_intensity.png" width=400>
 
 [Back to Top](#contents)
 
