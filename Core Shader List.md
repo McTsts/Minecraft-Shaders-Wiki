@@ -47,8 +47,18 @@ The part in brackets is a summary and not a full list of everything each shader 
     - [outline](#outline) (Glowing)
     - [lightning](#lightning) (Lightning, Ender dragon death animation beams)
   - [UI](#ui)
+    - [gui](#gui)
+    - [gui_ghost_recipe_overlay](#gui_ghost_recipe_overlay)
+    - [gui_overlay](#gui_overlay)
+    - [gui_text_highlight](#gui_text_highlight)
     - [text](#text) (Text)
     - [text_see_through](#text_see_through) (Name Plates)
+    - [text_intensity](#text_intensity)
+    - [text_intensity_see_through](#text_intensity_see_through)
+    - [text_background](#text_background)
+    - [text_background_see_through](#text_background_see_through)
+    - [text_intensity](#text_intensity)
+    - [text_intensity_see_through](#text_intensity_see_through)
   - [Other](#other)
     - [lines](#lines) (Block Outline, Hitboxes, Fishing Rod Line)
     - [crumbling](#crumbling) (Mining Block Cracks)
@@ -59,8 +69,6 @@ The part in brackets is a summary and not a full list of everything each shader 
   - [position_color_lightmap](#position_color_lightmap)
   - [position_color_tex_lightmap](#position_color_tex_lightmap)
   - [position_tex_lightmap_color](#position_tex_lightmap_color)
-  - [rendertype_text_intensity](#rendertype_text_intensity)
-  - [rendertype_text_intensity_see_through](#rendertype_text_intensity_see_through)
   - [rendertype_armor_glint](#rendertype_armor_glint)
   - [rendertype_translucent_no_crumbling](#rendertype_translucent_no_crumbling)
 - [Unused](#unused)
@@ -92,17 +100,20 @@ The colour of the sky. Also affects text highlighting.
 
 ### position_color
 Handles a few different things:
+* The transparent lower hemisphere overlay on the sky approximately between times 11315 to 14150 (sunset) and 21830 to 24670 (sunrise),
+* The f3+G chunk border displays,
+
+Pre 1.20:
 * The black transparent background on UI elements such as the chat field, the pause menu, and the scoreboard sidebar,
 * The Mojang loading background,
 * Highlighting item slots,
 * The background of tooltips,
-* The transparent lower hemisphere overlay on the sky approximately between times 11315 to 14150 (sunset) and 21830 to 24670 (sunrise),
 * The black bars on the sides when scoped in with a spyglass,
-* The f3+G chunk border displays.
+
 
 For UI elements, Position is the screen size divided by the GUI scale. E.g. 1920x1080 with GUI scale 3 means Position for x will be [0,640] and for y [0,360].
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/position_color.png" width=600>
+<img src="images/position_color.png" width=600>
 
 [Back to Top](#contents)
 
@@ -117,7 +128,7 @@ Handles a few different things:
 * The crosshair.
 * The mojang logo in loading screens.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/position_tex.png" width=600>
+<img src="images/position_tex.png" width=600>
 
 [Back to Top](#contents)
 
@@ -126,7 +137,7 @@ Handles a few different things:
 ### position_tex_color_normal 
 Clouds.  
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/position_tex_color_normal.png" width=600>
+<img src="images/position_tex_color_normal.png" width=600>
 
 [Back to Top](#contents)
 
@@ -135,7 +146,7 @@ Clouds.
 ### position_color_tex 
 Fire overlay when the player is burning.  
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/position_color_tex.png" width=600>
+<img src="images/position_color_tex.png" width=600>
 
 [Back to Top](#contents)
 
@@ -144,7 +155,7 @@ Fire overlay when the player is burning.
 ### position_tex_color
 The End sky, main menu panorama, and menu backgrounds.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/position_tex_color.png" width=600>
+<img src="images/position_tex_color.png" width=600>
 
 [Back to Top](#contents)
 
@@ -161,7 +172,7 @@ When dealing with block shaders which have something to do with `translucent`, `
 ### solid
 All solid blocks, lava, and when in fast mode, leaves. Also affects non-translucent falling blocks.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_solid.png" width=400> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_solid_2.png" width=400>
+<img src="images/rendertype_solid.png" width=400> <img src="images/rendertype_solid_2.png" width=400>
 
 [Back to Top](#contents)
 
@@ -171,7 +182,7 @@ All solid blocks, lava, and when in fast mode, leaves. Also affects non-transluc
 All non-cube-hitbox blocks, check the list in the section header.
 A list of all blocks rendered by this shader can be found [here](List%20of%20Blocks%20Affected.md#cutout).
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_cutout.png" width=600>
+<img src="images/rendertype_cutout.png" width=600>
 
 [Back to Top](#contents)
 
@@ -181,7 +192,7 @@ A list of all blocks rendered by this shader can be found [here](List%20of%20Blo
 Certain blocks not covered by other shaders, check the list in the section header. Covers leaves in fancy/fabulous graphics.
 A list of all blocks rendered by this shader can be found [here](List%20of%20Blocks%20Affected.md#cutout_mipped).
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_cutout_mipped.png" width=600>
+<img src="images/rendertype_cutout_mipped.png" width=600>
 
 [Back to Top](#contents)
 
@@ -191,7 +202,7 @@ A list of all blocks rendered by this shader can be found [here](List%20of%20Blo
 Translucent blocks like stained glass, check the list in the section header.
 A list of all blocks rendered by this shader can be found [here](List%20of%20Blocks%20Affected.md#translucent).
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent.png" width=400> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent_2.png" width=400>
+<img src="images/rendertype_translucent.png" width=400> <img src="images/rendertype_translucent_2.png" width=400>
 
 [Back to Top](#contents)
 
@@ -200,7 +211,7 @@ A list of all blocks rendered by this shader can be found [here](List%20of%20Blo
 ### translucent_moving_block
 Blocks which are translucent and are being moved by a piston.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_translucent_moving_block.png" width=400>
+<img src="images/rendertype_translucent_moving_block.png" width=400>
 
 [Back to Top](#contents)
 
@@ -209,7 +220,7 @@ Blocks which are translucent and are being moved by a piston.
 ### tripwire
 The middle section(s) of a tripwire.  
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_tripwire.png" width=600>
+<img src="images/rendertype_tripwire.png" width=600>
 
 [Back to Top](#contents)
 
@@ -219,7 +230,7 @@ The middle section(s) of a tripwire.
 The strange image in the end portal and end gateways.
 The shader files are called `end_portal.vsh`/`fsh`/`json`, with `end_gateway.json` referencing them.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_end_portal.png" width=400> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_end_gateway.png" width=300>
+<img src="images/rendertype_end_portal.png" width=400> <img src="images/rendertype_end_gateway.png" width=300>
 
 [Back to Top](#contents)
 
@@ -231,7 +242,7 @@ Shaders that render entities.
 ### entity_cutout_no_cull
 All entities, guardian beams, placed signs, and shulker boxes (both placed and in inventory)
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout_no_cull.png" width=400> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout_no_cull_2.png" width=800>
+<img src="images/rendertype_entity_cutout_no_cull.png" width=400> <img src="images/rendertype_entity_cutout_no_cull_2.png" width=800>
 
 [Back to Top](#contents)
 
@@ -248,7 +259,7 @@ Translucent entities and parts of entities:
 
 Sampler1 contains the red color that is overlayed on entities when they take damage.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent.png" height=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent_2.png" height=200>
+<img src="images/rendertype_entity_translucent.png" height=200> <img src="images/rendertype_entity_translucent_2.png" height=200>
 
 [Back to Top](#contents)
 
@@ -272,7 +283,7 @@ Handles a few different things:
 
 With item frames, the item frame entity itself is part of the shader, however, items on it are not. Only the filled-in parts of maps placed on an item frame are part of the shader.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_solid.png" width=300> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_solid_2.png" width=300> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_solid_3.png" width=300>
+<img src="images/rendertype_entity_solid.png" width=300> <img src="images/rendertype_entity_solid_2.png" width=300> <img src="images/rendertype_entity_solid_3.png" width=300>
 
 [Back to Top](#contents)
 
@@ -281,7 +292,7 @@ With item frames, the item frame entity itself is part of the shader, however, i
 ### entity_translucent_cull
 Flat texture items and transparent blocks held by entities or on head, in the inventory, and as entities. If Fabulous graphics is off, this shader also affects translucent items like stained glass and their panes, however if it is on, you should check [item_entity_translucent_cull](#item_entity_translucent_cull).
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent_cull.png" height=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_translucent_cull_2.png" height=200>
+<img src="images/rendertype_entity_translucent_cull.png" height=200> <img src="images/rendertype_entity_translucent_cull_2.png" height=200>
 
 [Back to Top](#contents)
 
@@ -290,7 +301,7 @@ Flat texture items and transparent blocks held by entities or on head, in the in
 ### armor_cutout_no_cull
 Armor and armor trims on entities.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_armor_cutout_no_cull.png" width=300>
+<img src="images/rendertype_armor_cutout_no_cull.png" width=300>
 
 [Back to Top](#contents)
 
@@ -299,7 +310,7 @@ Armor and armor trims on entities.
 ### armor_entity_glint
 The glint on enchanted armour. Slight transparency is inbuilt and unchangeable.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_armor_entity_glint.png" width=300>
+<img src="images/rendertype_armor_entity_glint.png" width=300>
 
 [Back to Top](#contents)
 
@@ -331,7 +342,7 @@ The enchant glint in translucent blocks (like stained glass) in world when graph
 ### energy_swirl
 Charged creeper and wither swirling outline.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_energy_swirl.png" height=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_energy_swirl_2.png" height=200>
+<img src="images/rendertype_energy_swirl.png" height=200> <img src="images/rendertype_energy_swirl_2.png" height=200>
 
 [Back to Top](#contents)
 
@@ -340,7 +351,7 @@ Charged creeper and wither swirling outline.
 ### eyes
 A shader for the entire body of an entity that has glowing eyes (not the eyes themselves). Not fully opaque.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_eyes.png" height=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_eyes_2.png" height=200>
+<img src="images/rendertype_eyes.png" height=200> <img src="images/rendertype_eyes_2.png" height=200>
 
 [Back to Top](#contents)
 
@@ -349,7 +360,7 @@ A shader for the entire body of an entity that has glowing eyes (not the eyes th
 ### leash
 Leads, both on entities and fences.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_leash.png" width=300> 
+<img src="images/rendertype_leash.png" width=300> 
 
 [Back to Top](#contents)
 
@@ -358,7 +369,7 @@ Leads, both on entities and fences.
 ### entity_shadow
 Blocks that are affected by an entity’s shadow, but not the shadow itself. Locked to the block grid.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_shadow.png" width=300> 
+<img src="images/rendertype_entity_shadow.png" width=300> 
 
 [Back to Top](#contents)
 
@@ -367,7 +378,7 @@ Blocks that are affected by an entity’s shadow, but not the shadow itself. Loc
 ### entity_cutout_no_cull_z_offset
 Mob skulls, both on entities and as an item. Does not include player heads. Also handles shulker shells and minecarts.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout_no_cull_z_offset.png" width=200> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout_no_cull_z_offset_2.png" width=200> 
+<img src="images/rendertype_entity_cutout_no_cull_z_offset.png" width=200> <img src="images/rendertype_entity_cutout_no_cull_z_offset_2.png" width=200> 
 
 [Back to Top](#contents)
 
@@ -376,7 +387,7 @@ Mob skulls, both on entities and as an item. Does not include player heads. Also
 ### entity_cutout
 Block items in the inventory or hand/head of an entity, chests, ender chests, chest in minecarts, and as entities. Does not include Shulker boxes (see [entity_cutout_no_cull](#entity_cutout_no_cull)). Also used for the fire overlay on burning entities.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_cutout.png" width=300> 
+<img src="images/rendertype_entity_cutout.png" width=300> 
 
 [Back to Top](#contents)
 
@@ -385,7 +396,7 @@ Block items in the inventory or hand/head of an entity, chests, ender chests, ch
 ### entity_decal
 Colors the Ender Dragon while it’s dying.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_decal.png" width=300> 
+<img src="images/rendertype_entity_decal.png" width=300> 
 
 [Back to Top](#contents)
 
@@ -395,7 +406,7 @@ Colors the Ender Dragon while it’s dying.
 ### item_entity_translucent_cull
 Handles dropped translucent items in Fabulous graphics. Also affects invisible entities while using spectator mode or the gamerule `seeFriendlyInvisibles`, as well as experience orbs in all graphics settings.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_item_entity_translucent_cull.png" width=300> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_item_entity_translucent_cull_2.png" width=300> 
+<img src="images/rendertype_item_entity_translucent_cull.png" width=300> <img src="images/rendertype_item_entity_translucent_cull_2.png" width=300> 
 
 [Back to Top](#contents)
 
@@ -413,7 +424,7 @@ Glowing parts of Warden texture.
 ### entity_smooth_cutout
 End crystal beams.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_smooth_cutout.png" width=300> 
+<img src="images/rendertype_entity_smooth_cutout.png" width=300> 
 
 [Back to Top](#contents)
 
@@ -422,7 +433,7 @@ End crystal beams.
 ### entity_no_outline
 The color and pattern of banners.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_no_outline.png" width=300> 
+<img src="images/rendertype_entity_no_outline.png" width=300> 
 
 [Back to Top](#contents)
 
@@ -431,7 +442,7 @@ The color and pattern of banners.
 ### entity_alpha
 Used in the death animation of the dragon. Seemingly only affects the dragon’s wings, possibly messed with in code?
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_entity_alpha.png" width=300> 
+<img src="images/rendertype_entity_alpha.png" width=300> 
 
 [Back to Top](#contents)
 
@@ -441,7 +452,7 @@ Used in the death animation of the dragon. Seemingly only affects the dragon’s
 ### water_mask
 Hides the water in a boat. Changing the color does not seem to have an effect, but changing the position does. Pictured left is moving the mask down by 64, pictured right is moving it to the right by 2.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_water_mask.png" width=300> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_water_mask_2.png" width=300> 
+<img src="images/rendertype_water_mask.png" width=300> <img src="images/rendertype_water_mask_2.png" width=300> 
 
 [Back to Top](#contents)
 
@@ -450,7 +461,7 @@ Hides the water in a boat. Changing the color does not seem to have an effect, b
 ### outline
 Glowing effect on entities. This buffer draws color on the entire entity, which is later turned into an outline by the entity_outline post shader.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_outline.png" width=300> 
+<img src="images/rendertype_outline.png" width=300> 
 
 [Back to Top](#contents)
 
@@ -464,15 +475,53 @@ Ender dragon death animation beams.
 
 ---
 
-
+## UI
+These are shaders which affect some part of the UI. Some UI elements are rendered by [Non-Rendertype](#non-rendertype) shaders.
 
 ---
 
-## UI
-These are shaders which affect some part of the UI. This is currently just text, as most UI elements are rendered by [Non-Rendertype](#non-rendertype) shaders.
+### gui
+* The black transparent background on UI elements such as the chat field, the pause menu, the scoreboard sidebar, and subtitles
+* The Mojang resource pack loading bar
+* Highlighting worlds, servers, and players in social interactions menu
+* The background of tooltips
+* Scroll bar and scroll bar background
+* World selection, recipe book, and social interactions search bar background
+* World loading animation
+* Crafting red missing item background (when using recipe book)
+
+[Back to Top](#contents)
+
+---
+
+### gui_ghost_recipe_overlay
+* Crafting translucent missing item overlay (when using recipe book)
+
+[Back to Top](#contents)
+
+---
+
+### gui_overlay
+* The Mojang resource pack loading background color
+* The black bars on the sides when scoped in with a spyglass
+* Highlighting item slots
+* World and server selection menu dropshadow
+
+[Back to Top](#contents)
+
+---
+
+### gui_text_highlight
+* All highlighted/selected text
+
+[Back to Top](#contents)
+
+---
 
 ### text
-All parts of text, including the shadow. This encompasses all text rendered including: F3 Menu, Menu button text, Entity names, Item names, descriptions & amounts in the inventory and the Chat etc. It also does the explored parts of maps
+All parts of text, including the shadow. This encompasses all text rendered including: F3 Menu, Menu button text, Entity names, Text display entites, Item names, descriptions & amounts in the inventory and the Chat etc. It also does the explored parts of maps
+
+---
 
 #### Isolating Elements
 Isolating certain texts. Different types of text can be isolated using their Position.z. Texts without a shadow are located at x, texts with a shadow are located at x + 0.03 with their shadow being at x. (e.g. at 0.0 and 0.03). *This seems to no longer be true in 1.19.4*
@@ -491,19 +540,51 @@ A basic list of where which text is located: (Not Complete! *Last checked in 1.1
 
 Since maps share the z value with the chat display and a part of the hotbar item count, you can test for Sampler0 having a size of 128 pixels in both directions to test for the face being a map.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_text.png" width=400>
+<img src="images/rendertype_text.png" width=400>
 
 [Back to Top](#contents)
 
 ---
 
 ### text_see_through
-The background nameplate of an entity’s custom name.
+* The background nameplate of an entity’s custom name
+* Nametag text when seen through walls
+* Text display entity text when `see_through:true` nbt is set
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_text_see_through.png" width=400>
+<img src="images/rendertype_text_see_through.png" width=400>
 
 [Back to Top](#contents)
 
+---
+
+### text_background
+* Text display entity background box
+
+[Back to Top](#contents)
+
+---
+
+### text_background_see_through
+* Text display entity background box when `see_through:true` nbt is set
+
+[Back to Top](#contents)
+
+---
+
+### text_intensity
+* Behaves like rendertype_text but when TTF font is used in the resourcepack
+* See [text](#text)
+
+[Back to Top](#contents)
+
+---
+
+### text_intensity_see_through
+* Behaves like rendertype_text_see_through but when TTF font is used in the resourcepack
+* See [text_see_through](#text_see_through)
+
+[Back to Top](#contents)
+  
 ---
 
 ## Other
@@ -516,7 +597,7 @@ Handles a few different things:
 * The f3+B hitbox displays,
 * Previews in the structure block.
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_lines.png" width=300> <img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_lines_2.png" width=400>
+<img src="images/rendertype_lines.png" width=300> <img src="images/rendertype_lines_2.png" width=400>
 
 [Back to Top](#contents)
 
@@ -525,7 +606,7 @@ Handles a few different things:
 ### crumbling
 The block cracks when mining a block. Has some in-built transparency.  
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_crumbling.png" width=600>
+<img src="images/rendertype_crumbling.png" width=600>
 
 [Back to Top](#contents)
 
@@ -534,7 +615,7 @@ The block cracks when mining a block. Has some in-built transparency.
 ### beacon_beam
 The beam of a beacon. Seems to get rendered behind clouds.  
 
-<img src="https://github.com/McTsts/shaders/blob/main/images/rendertype_beacon_beam.png" width=300>
+<img src="images/rendertype_beacon_beam.png" width=300>
 
 [Back to Top](#contents)
 
@@ -572,20 +653,6 @@ Similar to `position_color_tex`, but includes a second sampler for lightmap calc
 
 ### position_tex_lightmap_color
 Similar to `position_tex_color`, but includes a second sampler for lightmap calculations. Not observed ingame.
-
-[Back to Top](#contents)
-
----
-
-### rendertype_text_intensity
-Functionally the same as `rendertype_text`, except it uses the red value for every color in the texture calculation. Not observed ingame, may only be used for internal calculations. 
-
-[Back to Top](#contents)
-
----
-
-### rendertype_text_intensity_see_through
-Functionally the same as `rendertype_text_see_through`, except it uses the red value for every color in the texture calculation. Not observed ingame, may only be used for internal calculations.
 
 [Back to Top](#contents)
 
