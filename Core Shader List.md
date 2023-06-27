@@ -6,7 +6,7 @@ The part in brackets is a summary and not a full list of everything each shader 
   - [blit_screen](#blit_screen) (Copy)
   - [particle](#particle) (Particles)
   - [position](#position) (Sky)
-  - [position_color](#position_color) (Solid Color UI)
+  - [position_color](#position_color) (Pre 1.20 Solid Color UI)
   - [position_tex](#position_tex) (Texture UI, Worldborder, Sun/Moon)
   - [position_tex_color_normal](#position_tex_color_normal) (Clouds)
   - [position_color_tex](#position_color_tex) (Fire Overlay)
@@ -29,7 +29,7 @@ The part in brackets is a summary and not a full list of everything each shader 
     - [entity_cutout](#entity_cutout) (Block-placing Items)
     - [armor_cutout_no_cull](#armor_cutout_no_cull) (Armor)
     - [armor_entity_glint](#armor_entity_glint) (Worn Armor Enchant Glint)
-    - [entity_glint_direct](#entity_glint_direct)
+    - [entity_glint_direct](#entity_glint_direct) (Enchanted Trident Glint)
     - [glint](#glint) (Glass Enchant Glint)
     - [glint_direct](#glint_direct) (Standard Enchant Glint)
     - [glint_translucent](#glint_translucent) (Glass enchanted glint in `Fabolous!`)
@@ -48,18 +48,16 @@ The part in brackets is a summary and not a full list of everything each shader 
     - [outline](#outline) (Glowing)
     - [lightning](#lightning) (Lightning, Ender dragon death animation beams)
   - [UI](#ui)
-    - [gui](#gui)
-    - [gui_ghost_recipe_overlay](#gui_ghost_recipe_overlay)
-    - [gui_overlay](#gui_overlay)
-    - [gui_text_highlight](#gui_text_highlight)
+    - [gui](#gui) (Solid Color UI)
+    - [gui_ghost_recipe_overlay](#gui_ghost_recipe_overlay) (Recipe Book Missing Item Overlay)
+    - [gui_overlay](#gui_overlay) (Generic Overlay Effects)
+    - [gui_text_highlight](#gui_text_highlight) (Highlighted Text)
     - [text](#text) (Text)
-    - [text_see_through](#text_see_through) (Name Plates)
-    - [text_intensity](#text_intensity)
-    - [text_intensity_see_through](#text_intensity_see_through)
-    - [text_background](#text_background)
-    - [text_background_see_through](#text_background_see_through)
-    - [text_intensity](#text_intensity)
-    - [text_intensity_see_through](#text_intensity_see_through)
+    - [text_see_through](#text_see_through) (Name Plates, Text Through Walls)
+    - [text_background](#text_background) (Text Display Entity Background)
+    - [text_background_see_through](#text_background_see_through) (Text Display Entity Background Through Walls)
+    - [text_intensity](#text_intensity) (TTF Fonts)
+    - [text_intensity_see_through](#text_intensity_see_through) (TTF Fonts Through Walls)
   - [Other](#other)
     - [lines](#lines) (Block Outline, Hitboxes, Fishing Rod Line)
     - [crumbling](#crumbling) (Mining Block Cracks)
@@ -320,7 +318,7 @@ The glint on enchanted armour. Slight transparency is inbuilt and unchangeable.
 ### entity_glint_direct
 The glint on enchanted tridents.
 
-<img src="images/rendertype_entity_glint_direct.png" width=300>
+<img src="images/rendertype_entity_glint_direct.png" width=500>
 
 [Back to Top](#contents)
 
@@ -500,7 +498,7 @@ These are shaders which affect some part of the UI. Some UI elements are rendere
 * World loading animation
 * Crafting red missing item background (when using recipe book)
 
-<img src="images/rendertype_gui.png" width=300> <img src="images/rendertype_gui_2.png" width=300> 
+<img src="images/rendertype_gui.png" width=400> <img src="images/rendertype_gui_2.png" width=400> 
 
 [Back to Top](#contents)
 
@@ -510,7 +508,7 @@ These are shaders which affect some part of the UI. Some UI elements are rendere
 * Crafting translucent missing item overlay (when using recipe book)
 
 <figure>
-  <img src="images/rendertype_gui_ghost_recipe_overlay.png" width=300> 
+  <img src="images/rendertype_gui_ghost_recipe_overlay.png" width=400> 
   <figcaption>*highlighted in green for better contrast*</figcaption>
 </figure>
 
