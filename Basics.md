@@ -9,11 +9,11 @@ Shaders are written in OpenGL Shading Language (GLSL), a C-like language with su
 When using shaders, especially when starting with them, I strongly recommend you use [Suso's Shader Reload mod](https://www.curseforge.com/minecraft/mc-mods/shader-reload).  
 While this is a mod, it's a fabric mod and won't modify any part of the game except for the shader reload. Make sure to *not* use other fabric mods that do affect shaders, such as sodium.  
 
-When working with shaders, especially as a beginner, you will often want to reload your resource pack to check whether it works. If there's an error in your code, Minecraft will output it in the game output, and unequip the resource pack.  
+When working with shaders, especially as a beginner, you will often want to reload your resource pack to check whether it works. If there's an error in your code, Minecraft will output it in the game output, and disable the resource pack.  
 This is avoided when using the shader reload mod. It allows you to only reload shaders (and not the rest of the resource pack), making it significantly faster. Additionally, when you make a mistake it simply doesn't reload the shaders and outputs the errors in chat. This makes debugging much more comfortable.
 
 ### Shader Subfolders
-The vanilla shaders are contained in the `assets` of the game, similarily to textures, models and similiar. They have a `shader` subfolder in the `minecraft` namespace. A copy of them can also be found in this [repo](https://github.com/misode/mcmeta/tree/assets/assets/minecraft/shaders).  
+The vanilla shaders are contained in the `assets` of the game, similarly to textures, models and similar. They have a `shader` subfolder in the `minecraft` namespace. A copy of them can also be found in this [repo](https://github.com/misode/mcmeta/tree/assets/assets/minecraft/shaders).  
 
 The `shader` folder contains 4 subfolders:
 

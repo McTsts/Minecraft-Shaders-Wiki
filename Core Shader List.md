@@ -32,7 +32,7 @@ The part in brackets is a summary and not a full list of everything each shader 
     - [entity_glint_direct](#entity_glint_direct) (Enchanted Trident Glint)
     - [glint](#glint) (Glass Enchant Glint)
     - [glint_direct](#glint_direct) (Standard Enchant Glint)
-    - [glint_translucent](#glint_translucent) (Glass enchanted glint in `Fabolous!`)
+    - [glint_translucent](#glint_translucent) (Glass enchanted glint in `Fabulous!`)
     - [energy_swirl](#energy_swirl) (Charged Creeper, Wither Swirl)
     - [eyes](#eyes) (Entities with glowing eyes)
     - [leash](#leash) (Leash)
@@ -40,7 +40,7 @@ The part in brackets is a summary and not a full list of everything each shader 
     - [entity_cutout_no_cull_z_offset](#entity_cutout_no_cull_z_offset) (Mob Skulls, Minecart, Shulker)
     - [entity_decal](#entity_decal) (Ender Dragon Death)
     - [entity_alpha](#entity_alpha) (Ender Dragon Death Wings)
-    - [item_entity_translucent_cull](#item_entity_translucent_cull) (XP Orbs, Fabolous translucent items, Invisible Entities)
+    - [item_entity_translucent_cull](#item_entity_translucent_cull) (XP Orbs, Fabulous translucent items, Invisible Entities)
     - [entity_smooth_cutout](#entity_smooth_cutout) (End Crystal Beams)
     - [entity_translucent_emissive](#entity_translucent_emissive) (Glowing parts of Warden texture)
     - [entity_no_outline](#entity_no_outline) (Banner)
@@ -339,7 +339,7 @@ The enchant glint in most situations. Enchanted worn armor is rendered by `armor
 ---
 
 ### glint_translucent
-The enchant glint in translucent blocks (like stained glass) in world when graphics setting is `Fabolous!`.
+The enchant glint in translucent blocks (like stained glass) in world when graphics setting is `Fabulous!`.
 
 <img src="images/rendertype_glint_translucent.png" width=200> 
 
@@ -520,7 +520,7 @@ These are shaders which affect some part of the UI. Some UI elements are rendere
 * The Mojang resource pack loading background color
 * The black bars on the sides when scoped in with a spyglass
 * Highlighting item slots
-* World and server selection menu dropshadow
+* World and server selection menu drop-shadow
 
 [Back to Top](#contents)
 
@@ -536,7 +536,7 @@ These are shaders which affect some part of the UI. Some UI elements are rendere
 ---
 
 ### text
-All parts of text, including the shadow. This encompasses all text rendered including: F3 Menu, Menu button text, Entity names, Text display entites, Item names, descriptions & amounts in the inventory and the Chat etc. It also does the explored parts of maps
+All parts of text, including the shadow. This encompasses all text rendered including: F3 Menu, Menu button text, Entity names, Text display entities, Item names, descriptions & amounts in the inventory and the Chat etc. It also does the explored parts of maps
 
 ---
 
