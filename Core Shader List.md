@@ -8,7 +8,6 @@ The part in brackets is a summary and not a full list of everything each shader 
   - [position](#position) (Sky)
   - [position_color](#position_color) (Pre 1.20 Solid Color UI)
   - [position_tex](#position_tex) (Texture UI, Worldborder, Sun/Moon)
-  - [position_tex_color_normal](#position_tex_color_normal) (Clouds)
   - [position_color_tex](#position_color_tex) (Fire Overlay)
   - [position_tex_color](#position_tex_color) (End Sky, Menu Background)
 - [Rendertype](#rendertype)
@@ -60,6 +59,7 @@ The part in brackets is a summary and not a full list of everything each shader 
     - [text_intensity_see_through](#text_intensity_see_through) (TTF Fonts Through Walls)
   - [Other](#other)
     - [lines](#lines) (Block Outline, Hitboxes, Fishing Rod Line)
+    - [clouds](#clouds) (Clouds)
     - [crumbling](#crumbling) (Mining Block Cracks)
     - [beacon_beam](#beacon_beam) (Beacon Beam)
 - [Unknown](#unknown)
@@ -125,15 +125,6 @@ Handles a few different things:
 * The mojang logo in loading screens.
 
 <img src="images/position_tex.png" width=600>
-
-[Back to Top](#contents)
-
----
-
-### position_tex_color_normal 
-Clouds.  
-
-<img src="images/position_tex_color_normal.png" width=600>
 
 [Back to Top](#contents)
 
@@ -623,6 +614,15 @@ Handles a few different things:
 The block cracks when mining a block. Has some in-built transparency.  
 
 <img src="images/rendertype_crumbling.png" width=600>
+
+[Back to Top](#contents)
+
+---
+
+### clouds 
+Clouds.  
+
+<img src="images/rendertype_clouds.png" width=600>
 
 [Back to Top](#contents)
 
