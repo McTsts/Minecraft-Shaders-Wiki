@@ -621,6 +621,7 @@ The block cracks when mining a block. Has some in-built transparency.
 
 ### clouds 
 Clouds.  
+Prior to 24w05a, the shader was not a rendertype and was named `position_tex_color_normal`.  
 
 <img src="images/rendertype_clouds.png" width=600>
 
