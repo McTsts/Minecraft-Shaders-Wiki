@@ -70,8 +70,6 @@ The part in brackets is a summary and not a full list of everything each shader 
   - [position_tex_lightmap_color](#position_tex_lightmap_color)
   - [rendertype_armor_glint](#rendertype_armor_glint)
   - [rendertype_translucent_no_crumbling](#rendertype_translucent_no_crumbling)
-- [Unused](#unused)
-  - [position_color_normal](#position_color_normal)
 
 # Non-Rendertype
 There are several shaders which are not prefixed with `rendertype_`. These seem to be for more general targets, such as the sky or all particles.  
@@ -686,15 +684,6 @@ Unknown.
 
 ### rendertype_translucent_no_crumbling
 Unknown.
-
-[Back to Top](#contents)
-
-# Unused 
-
-These are shaders that exist in the files, but are not loaded by the game.
-
-### position_color_normal
-Unknown. Doesn’t seem to be loaded by the game, but included on assets.
 
 [Back to Top](#contents)
 
