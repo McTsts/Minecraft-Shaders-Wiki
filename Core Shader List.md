@@ -8,7 +8,6 @@ The part in brackets is a summary and not a full list of everything each shader 
   - [position](#position) (Sky)
   - [position_color](#position_color) (Pre 1.20 Solid Color UI)
   - [position_tex](#position_tex) (Texture UI, Worldborder, Sun/Moon)
-  - [position_tex_color_normal](#position_tex_color_normal) (Clouds)
   - [position_color_tex](#position_color_tex) (Fire Overlay)
   - [position_tex_color](#position_tex_color) (End Sky, Menu Background)
 - [Rendertype](#rendertype)
@@ -60,6 +59,7 @@ The part in brackets is a summary and not a full list of everything each shader 
     - [text_intensity_see_through](#text_intensity_see_through) (TTF Fonts Through Walls)
   - [Other](#other)
     - [lines](#lines) (Block Outline, Hitboxes, Fishing Rod Line)
+    - [clouds](#clouds) (Clouds)
     - [crumbling](#crumbling) (Mining Block Cracks)
     - [beacon_beam](#beacon_beam) (Beacon Beam)
 - [Unknown](#unknown)
@@ -67,11 +67,8 @@ The part in brackets is a summary and not a full list of everything each shader 
   - [new_entity](#new_entity)
   - [position_color_lightmap](#position_color_lightmap)
   - [position_color_tex_lightmap](#position_color_tex_lightmap)
-  - [position_tex_lightmap_color](#position_tex_lightmap_color)
   - [rendertype_armor_glint](#rendertype_armor_glint)
   - [rendertype_translucent_no_crumbling](#rendertype_translucent_no_crumbling)
-- [Unused](#unused)
-  - [position_color_normal](#position_color_normal)
 
 # Non-Rendertype
 There are several shaders which are not prefixed with `rendertype_`. These seem to be for more general targets, such as the sky or all particles.  
@@ -128,15 +125,6 @@ Handles a few different things:
 * The mojang logo in loading screens.
 
 <img src="images/position_tex.png" width=600>
-
-[Back to Top](#contents)
-
----
-
-### position_tex_color_normal 
-Clouds.  
-
-<img src="images/position_tex_color_normal.png" width=600>
 
 [Back to Top](#contents)
 
@@ -631,6 +619,16 @@ The block cracks when mining a block. Has some in-built transparency.
 
 ---
 
+### clouds 
+Clouds.  
+Prior to 24w05a, the shader was not a rendertype and was named `position_tex_color_normal`.  
+
+<img src="images/rendertype_clouds.png" width=600>
+
+[Back to Top](#contents)
+
+---
+
 ### beacon_beam
 The beam of a beacon. Seems to get rendered behind clouds.  
 
@@ -670,13 +668,6 @@ Similar to `position_color_tex`, but includes a second sampler for lightmap calc
 
 ---
 
-### position_tex_lightmap_color
-Similar to `position_tex_color`, but includes a second sampler for lightmap calculations. Not observed ingame.
-
-[Back to Top](#contents)
-
----
-
 ### rendertype_armor_glint
 Unknown.
 
@@ -686,15 +677,6 @@ Unknown.
 
 ### rendertype_translucent_no_crumbling
 Unknown.
-
-[Back to Top](#contents)
-
-# Unused 
-
-These are shaders that exist in the files, but are not loaded by the game.
-
-### position_color_normal
-Unknown. Doesn’t seem to be loaded by the game, but included on assets.
 
 [Back to Top](#contents)
 
