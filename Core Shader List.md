@@ -67,7 +67,6 @@ The part in brackets is a summary and not a full list of everything each shader 
   - [new_entity](#new_entity)
   - [position_color_lightmap](#position_color_lightmap)
   - [position_color_tex_lightmap](#position_color_tex_lightmap)
-  - [position_tex_lightmap_color](#position_tex_lightmap_color)
   - [rendertype_armor_glint](#rendertype_armor_glint)
   - [rendertype_translucent_no_crumbling](#rendertype_translucent_no_crumbling)
 
@@ -663,13 +662,6 @@ Similar to `position_color`, but includes a second sampler for lightmap calculat
 
 ### position_color_tex_lightmap
 Similar to `position_color_tex`, but includes a second sampler for lightmap calculations. Not observed ingame.
-
-[Back to Top](#contents)
-
----
-
-### position_tex_lightmap_color
-Similar to `position_tex_color`, but includes a second sampler for lightmap calculations. Not observed ingame.
 
 [Back to Top](#contents)
 
