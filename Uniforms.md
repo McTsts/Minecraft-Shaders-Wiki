@@ -18,7 +18,7 @@ FogEnd determines the end of the fog.
 ## Position
 ### Block Shaders
 Position is a vector representing the xyz coordinates in world-space. Position for blocks is relative to the southwest (needs confirming) chunk corner, and is therefore always between 0 and 16.  
-  
+
 You must use Position + ChunkOffset to get the actual vector position in world space.
 
 ### Entity Shaders
@@ -47,7 +47,13 @@ Transforms positions from World Space > View Space.
 This is passed in as an identity matrix, and therefore has no effect on any entity vertex.
 
 ### IViewRotMat
-Transforms positions from View Space > World Space. This is the inverse to ModelViewMat, but is not passed in as an identity matrix for either shader type. If you would like entity coordinates in world space, you must use IViewRotMat * Position. (Note that a transpose is the same as inverse for a rotation matrix, so you can also use IViewRotMat to go from World Space > View Space by using left-multiplication).
+<details>
+  <summary>Click to see the description before <b>24w04a</b> (or release <b>1.20.4</b>)</summary>
+
+  Transforms positions from View Space > World Space. This is the inverse to ModelViewMat, but is not passed in as an identity matrix for either shader type. If you would like entity coordinates in world space, you must use IViewRotMat * Position. (Note that a transpose is the same as inverse for a rotation matrix, so you can also use IViewRotMat to go from World Space > View Space by using left-multiplication).
+</details>
+
+Since <b>24w04a</b>, IViewRotMat is no longer used in shaders. However, the uniform is still accessible and can be used to obtain normals in world space.
 
 ### ProjMat
 Transforms positions from View Space > Screen Space.  
