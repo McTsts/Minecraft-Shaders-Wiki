@@ -8,7 +8,7 @@ The part in brackets is a summary and not a full list of everything each shader 
   - [position](#position) (Sky)
   - [position_color](#position_color) (Pre 1.20 Solid Color UI)
   - [position_tex](#position_tex) (Texture UI, Worldborder, Sun/Moon)
-  - [position_color_tex](#position_color_tex) (Fire Overlay)
+  - [position_color_tex](#position_color_tex) (Fire/Wall Overlay)
   - [position_tex_color](#position_tex_color) (End Sky, Menu Background)
 - [Rendertype](#rendertype)
   - [Blocks](#blocks)
@@ -132,8 +132,12 @@ Handles a few different things:
 
 ### position_color_tex 
 Fire overlay when the player is burning.  
+Wall overlay when player is suffocating
 
 <img src="images/position_color_tex.png" width=600>
+<img src="images/wall_overlay.png" width=600>
+
+
 
 [Back to Top](#contents)
 
