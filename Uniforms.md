@@ -70,3 +70,6 @@ Only available in `rendertype_end_portal` and `rendertype_end_gateway`
 
 ## TextureMat
 Only available in `rendertype_glint_translucent`, `rendertype_glint_direct`, `rendertype_glint`, `rendertype_entity_glint_direct`, `rendertype_entity_glint`, `rendertype_armor_glint`, `rendertype_armor_entity_glint` and `rendertype_energy_swirl`
+
+## GlintAlpha
+Floating value defined between 0.0 and 1.0. Depends on the `Glint Strength` setting available in the Accessibility Settings.
