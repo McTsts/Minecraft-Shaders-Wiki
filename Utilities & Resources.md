@@ -14,6 +14,16 @@ gl_VertexID order in core shaders, where 0,0 is center of rectangle and 0 is -1,
 ## [Godlander's .obj model renderer](https://github.com/Godlander/objmc)
 A python script to convert .OBJ files into Minecraft, rendering them in game with a core shader.
 
+## [Misode's mcmeta repository](https://github.com/misode/mcmeta)
+
+A repository containing the different assets of Minecraft, including the shaders. It is useful to check the vanilla shaders and their structure. You can find directly the shaders in the `assets` branch, in the [`assets/minecraft/shaders`](https://github.com/misode/mcmeta/tree/assets/assets/minecraft/shaders) folder.
+
+
+## [GLSL ES specifications](https://registry.khronos.org/OpenGL/specs/es/3.0/GLSL_ES_Specification_3.00.pdf)
+
+A PDF document that explains the GLSL ES 3.0 specifications.
+permits to check input and output types of built in functions, and other useful information.
+
 # Examples
 
 ## [Ancientkingg's Fancy Pants](https://github.com/Ancientkingg/fancyPants)
