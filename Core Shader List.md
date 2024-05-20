@@ -170,7 +170,7 @@
 
   For UI elements Position is the screen size divided by the gui scale. E.g. 1920x1080 with GUI scale 3 means Position for x will be [0,640] and for y [0,360].
 
-  <img src="images/position_tex.png" width=600> <img src="images/position_tex2.png" width=600>
+  <img src="images/position_tex.png" width=600> <img src="images/position_tex_2.png" width=600>
 
   [Back to Top](#contents)
 
