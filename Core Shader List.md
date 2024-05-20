@@ -81,7 +81,7 @@
     <a title="Open blit_screen.vsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/blit_screen.vsh">vsh</a> • 
     <a title="Open blit_screen.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/blit_screen.fsh">fsh</a>
   </h6>
-
+  
   Blit copies one buffer to another, however this cannot be overridden in a resource pack.
 
   [Back to Top](#contents)
@@ -153,14 +153,24 @@
   </h6>
 
   Handles a few different things:
-  * The Sun and Moon,
-  * The worldborder, 
-  * Most GUI textures (like the hotbar, buttons), 
-  * Overlays (pumpkin blur, powder snow, the vignette),
-  * The crosshair.
-  * The mojang logo in loading screens.
+  * The Sun and Moon
+  * The worldborder
+  * Most GUI textures (like the hotbar, buttons, icons)
+  * Overlays (pumpkin blur, powder snow, the vignette, spyglass glass)
+  * The crosshair
+  * The mojang logo in loading screens
+  * The menus backgroud blur (blurring is done in post)
+  * The Minecraft Java Edition logo on the main screen
+  * The player heads and connections icons in tab
+  
+  Also affects:
+  * Chunk border display
+  * Sky
+  * Sunset and sunrise halo
 
-  <img src="images/position_tex.png" width=600>
+  For UI elements Position is the screen size divided by the gui scale. E.g. 1920x1080 with GUI scale 3 means Position for x will be [0,640] and for y [0,360].
+
+  <img src="images/position_tex.png" width=600> <img src="images/position_tex_2.png" width=600>
 
   [Back to Top](#contents)
 
