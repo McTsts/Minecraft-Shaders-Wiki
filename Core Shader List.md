@@ -309,7 +309,7 @@
 
   ---
 
-  ### end_portal 
+  ### end_portal (and end_gateway) 
   <h6>
     View on mcmeta:
     <a title="Open rendertype_end_portal.json on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertype_end_portal.json">json</a> • 
