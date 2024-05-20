@@ -18,7 +18,7 @@ FogEnd determines the end of the fog.
 ## Position
 ### Block Shaders
 Position is a vector representing the xyz coordinates in world-space. Position for blocks is relative to the southwest (needs confirming) chunk corner, and is therefore always between 0 and 16.  
-  
+
 You must use Position + ChunkOffset to get the actual vector position in world space.
 
 ### Entity Shaders
@@ -47,7 +47,13 @@ Transforms positions from World Space > View Space.
 This is passed in as an identity matrix, and therefore has no effect on any entity vertex.
 
 ### IViewRotMat
-Transforms positions from View Space > World Space. This is the inverse to ModelViewMat, but is not passed in as an identity matrix for either shader type. If you would like entity coordinates in world space, you must use IViewRotMat * Position. (Note that a transpose is the same as inverse for a rotation matrix, so you can also use IViewRotMat to go from World Space > View Space by using left-multiplication).
+Since <b>24w05a</b>, IViewRotMat is no longer available.
+
+<details>
+  <summary>Click to see the description before <b>24w05a</b> (or release <b>1.20.4</b>)</summary>
+
+  Transforms positions from View Space > World Space. This is the inverse to ModelViewMat, but is not passed in as an identity matrix for either shader type. If you would like entity coordinates in world space, you must use IViewRotMat * Position. (Note that a transpose is the same as inverse for a rotation matrix, so you can also use IViewRotMat to go from World Space > View Space by using left-multiplication).
+</details>
 
 ### ProjMat
 Transforms positions from View Space > Screen Space.  
@@ -64,3 +70,6 @@ Only available in `rendertype_end_portal` and `rendertype_end_gateway`
 
 ## TextureMat
 Only available in `rendertype_glint_translucent`, `rendertype_glint_direct`, `rendertype_glint`, `rendertype_entity_glint_direct`, `rendertype_entity_glint`, `rendertype_armor_glint`, `rendertype_armor_entity_glint` and `rendertype_energy_swirl`
+
+## GlintAlpha
+Floating value defined between 0.0 and 1.0. Depends on the `Glint Strength` setting available in the Accessibility Settings.
