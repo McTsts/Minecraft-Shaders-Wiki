@@ -1048,7 +1048,7 @@
   ### rendertype_armor_glint
   <h6>
     View on mcmeta:
-    <a title="Open rendertypermor_glint.json on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertypermor_glint.json">json</a> • 
+    <a title="Open rendertypermor_glint.json on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertype_armor_glint.json">json</a> • 
     <a title="Open rendertype_armor_glint.vsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertype_armor_glint.vsh">vsh</a> • 
     <a title="Open rendertype_armor_glint.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertype_armor_glint.fsh">fsh</a>
   </h6>
