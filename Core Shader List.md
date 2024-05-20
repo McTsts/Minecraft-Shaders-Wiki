@@ -154,7 +154,6 @@
 
   Handles a few different things:
   * The Sun and Moon
-  * The sunset halo
   * The worldborder
   * Most GUI textures (like the hotbar, buttons, icons)
   * Overlays (pumpkin blur, powder snow, the vignette, spyglass glass)
