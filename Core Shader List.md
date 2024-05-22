@@ -1082,7 +1082,7 @@
   * Fire overlay when the player is burning
   * Wall overlay when player is suffocating
 
-  <img src="images/position_color_tex.png" width=600>
+  <img src="images/position_tex_color2.png" width=600>
   <img src="images/wall_overlay.png" width=600>
 
 
