@@ -176,26 +176,6 @@
 
   ---
 
-  ### position_color_tex 
-  <h6>
-    View on mcmeta:
-    <a title="Open position_color_tex.json on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/position_color_tex.json">json</a> • 
-    <a title="Open position_color_tex.vsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/position_color_tex.vsh">vsh</a> • 
-    <a title="Open position_color_tex.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/position_color_tex.fsh">fsh</a>
-  </h6>
-
-  Fire overlay when the player is burning.  
-  Wall overlay when player is suffocating
-
-  <img src="images/position_color_tex.png" width=600>
-  <img src="images/wall_overlay.png" width=600>
-
-
-
-  [Back to Top](#contents)
-
-  ---
-
   ### position_tex_color 
   <h6>
     View on mcmeta:
@@ -204,9 +184,16 @@
     <a title="Open position_tex_color.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/position_tex_color.fsh">fsh</a>
   </h6>
 
-  The End sky, main menu panorama, and menu backgrounds.
+  Handles:
+  * The End sky
+  * main menu panorama and menu backgrounds
+  * Fire overlay when the player is burning
+  * Wall overlay when player is suffocating
+  
 
   <img src="images/position_tex_color.png" width=600>
+  <img src="images/position_color_tex.png" width=600>
+  <img src="images/wall_overlay.png" width=600>
 
   [Back to Top](#contents)
 
@@ -1105,6 +1092,28 @@
   > View last available version on mcmeta: <a title="View rendertype_translucent_no_crumbling.json on mcmeta" href="https://github.com/misode/mcmeta/blob/92a894bdc858d414a71ad0407422a1932b408a55/assets/minecraft/shaders/core/rendertype_translucent_no_crumbling.json">json</a> • <a title="View rendertype_translucent_no_crumbling.vsh on mcmeta" href="https://github.com/misode/mcmeta/blob/92a894bdc858d414a71ad0407422a1932b408a55/assets/minecraft/shaders/core/rendertype_translucent_no_crumbling.vsh">vsh</a> • <a title="View rendertype_translucent_no_crumbling.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/92a894bdc858d414a71ad0407422a1932b408a55/assets/minecraft/shaders/core/rendertype_translucent_no_crumbling.fsh">fsh</a>
 
   Unknown.
+
+  [Back to Top](#contents)
+
+  ---
+
+  ### position_color_tex 
+
+  > ***Removed in 24w21a***<br />
+  > Merged with [position_tex_color](#position_tex_color)<br />
+  > View last available version on mcmeta: <a title="Open position_color_tex.json on mcmeta" href="https://github.com/misode/mcmeta/blob/8973096b19ea289821ca208d374c1b87dd078bff/assets/minecraft/shaders/core/position_color_tex.json">json</a> • 
+    <a title="Open position_color_tex.vsh on mcmeta" href="https://github.com/misode/mcmeta/blob/8973096b19ea289821ca208d374c1b87dd078bff/assets/minecraft/shaders/core/position_color_tex.vsh">vsh</a> • 
+    <a title="Open position_color_tex.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/8973096b19ea289821ca208d374c1b87dd078bff/assets/minecraft/shaders/core/position_color_tex.fsh">fsh</a>
+  </h6>
+
+  Was previously used for:
+  * Fire overlay when the player is burning
+  * Wall overlay when player is suffocating
+
+  <img src="images/position_color_tex.png" width=600>
+  <img src="images/wall_overlay.png" width=600>
+
+
 
   [Back to Top](#contents)
 
