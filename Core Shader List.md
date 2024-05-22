@@ -63,13 +63,13 @@
   - [Unknown](#unknown)
     - [position_color_lightmap](#position_color_lightmap)
     - [position_color_tex_lightmap](#position_color_tex_lightmap)
-    - [rendertype_armor_glint](#rendertype_armor_glint)
   - [Removed](#removed)
     - [block](#block)
     - [new_entity](#new_entity)
     - [rendertype_translucent_no_crumbling](#rendertype_translucent_no_crumbling)
     - [position_color_tex](#position_color_tex)
     - [rendertype_glint_direct](#rendertype_glint_direct)
+    - [rendertype_armor_glint](#rendertype_armor_glint)
 
   # Non-Rendertype
   There are several shaders which are not prefixed with `rendertype_`. These seem to be for more general targets, such as the sky or all particles.  
@@ -1033,20 +1033,6 @@
 
   [Back to Top](#contents)
 
-  ---
-
-  ### rendertype_armor_glint
-  <h6>
-    View on mcmeta:
-    <a title="Open rendertypermor_glint.json on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertype_armor_glint.json">json</a> • 
-    <a title="Open rendertype_armor_glint.vsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertype_armor_glint.vsh">vsh</a> • 
-    <a title="Open rendertype_armor_glint.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertype_armor_glint.fsh">fsh</a>
-  </h6>
-
-  Unknown.
-
-  [Back to Top](#contents)
-
 
   # Removed
 
@@ -1112,6 +1098,17 @@
   > View last available version on mcmeta: <a title="Open rendertype_glint_direct.json on mcmeta" href="https://github.com/misode/mcmeta/blob/8973096b19ea289821ca208d374c1b87dd078bff/assets/minecraft/shaders/core/rendertype_glint_direct.json">json</a> • <a title="Open rendertype_glint_direct.vsh on mcmeta" href="https://github.com/misode/mcmeta/blob/8973096b19ea289821ca208d374c1b87dd078bff/assets/minecraft/shaders/core/rendertype_glint_direct.vsh">vsh</a> • <a title="Open rendertype_glint_direct.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/8973096b19ea289821ca208d374c1b87dd078bff/assets/minecraft/shaders/core/rendertype_glint_direct.fsh">fsh</a>
 
   Was previously used for the enchant glint in most situations. Enchanted worn armor was rendered by `armor_entity_glint` and glass type blocks were rendered by `glint` when in world instead.
+
+  [Back to Top](#contents)
+
+---
+
+  ### rendertype_armor_glint
+
+  > ***Removed in 24w21a***<br />
+  > View last available version on mcmeta: <a title="Open rendertype_armor_glint.json on mcmeta" href="https://github.com/misode/mcmeta/blob/8973096b19ea289821ca208d374c1b87dd078bff/assets/minecraft/shaders/core/rendertype_armor_glint.json">json</a> • <a title="Open rendertype_armor_glint.vsh on mcmeta" href="https://github.com/misode/mcmeta/blob/8973096b19ea289821ca208d374c1b87dd078bff/assets/minecraft/shaders/core/rendertype_armor_glint.vsh">vsh</a> • <a title="Open rendertype_armor_glint.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/8973096b19ea289821ca208d374c1b87dd078bff/assets/minecraft/shaders/core/rendertype_armor_glint.fsh">fsh</a>
+
+  Was unused.
 
   [Back to Top](#contents)
 
