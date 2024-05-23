@@ -8,8 +8,7 @@
     - [position](#position) (Sky)
     - [position_color](#position_color) (Pre 1.20 Solid Color UI)
     - [position_tex](#position_tex) (Texture UI, Worldborder, Sun/Moon)
-    - [position_color_tex](#position_color_tex) (Fire/Wall Overlay)
-    - [position_tex_color](#position_tex_color) (End Sky, Menu Background)
+    - [position_tex_color](#position_tex_color) (Fire, Wall Overlay, End Sky, Menu Background)
   - [Rendertype](#rendertype)
     - [Blocks](#blocks)
       - [solid](#solid) (Solid Blocks, Lava, Solid Falling Blocks)
@@ -29,8 +28,7 @@
       - [armor_cutout_no_cull](#armor_cutout_no_cull) (Armor)
       - [armor_entity_glint](#armor_entity_glint) (Worn Armor Enchant Glint)
       - [entity_glint_direct](#entity_glint_direct) (Enchanted Trident Glint)
-      - [glint](#glint) (Glass Enchant Glint)
-      - [glint_direct](#glint_direct) (Standard Enchant Glint)
+      - [glint](#glint) (Standard Enchant Glint)
       - [glint_translucent](#glint_translucent) (Glass enchanted glint in `Fabulous!`)
       - [energy_swirl](#energy_swirl) (Charged Creeper, Wither Swirl)
       - [eyes](#eyes) (Entities with glowing eyes)
@@ -65,11 +63,13 @@
   - [Unknown](#unknown)
     - [position_color_lightmap](#position_color_lightmap)
     - [position_color_tex_lightmap](#position_color_tex_lightmap)
-    - [rendertype_armor_glint](#rendertype_armor_glint)
   - [Removed](#removed)
     - [block](#block)
     - [new_entity](#new_entity)
     - [rendertype_translucent_no_crumbling](#rendertype_translucent_no_crumbling)
+    - [position_color_tex](#position_color_tex)
+    - [rendertype_glint_direct](#rendertype_glint_direct)
+    - [rendertype_armor_glint](#rendertype_armor_glint)
 
   # Non-Rendertype
   There are several shaders which are not prefixed with `rendertype_`. These seem to be for more general targets, such as the sky or all particles.  
@@ -176,26 +176,6 @@
 
   ---
 
-  ### position_color_tex 
-  <h6>
-    View on mcmeta:
-    <a title="Open position_color_tex.json on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/position_color_tex.json">json</a> • 
-    <a title="Open position_color_tex.vsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/position_color_tex.vsh">vsh</a> • 
-    <a title="Open position_color_tex.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/position_color_tex.fsh">fsh</a>
-  </h6>
-
-  Fire overlay when the player is burning.  
-  Wall overlay when player is suffocating
-
-  <img src="images/position_color_tex.png" width=600>
-  <img src="images/wall_overlay.png" width=600>
-
-
-
-  [Back to Top](#contents)
-
-  ---
-
   ### position_tex_color 
   <h6>
     View on mcmeta:
@@ -204,9 +184,16 @@
     <a title="Open position_tex_color.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/position_tex_color.fsh">fsh</a>
   </h6>
 
-  The End sky, main menu panorama, and menu backgrounds.
+  Handles:
+  * The End sky
+  * main menu panorama and menu backgrounds
+  * Fire overlay when the player is burning
+  * Wall overlay when player is suffocating
+  
 
   <img src="images/position_tex_color.png" width=600>
+  <img src="images/position_tex_color_2.png" width=600>
+  <img src="images/position_tex_color_3.png" width=600>
 
   [Back to Top](#contents)
 
@@ -489,21 +476,7 @@
     <a title="Open rendertype_glint.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertype_glint.fsh">fsh</a>
   </h6>
 
-  The glint on (stained) glass and (stained) glass panes, while rendered in the world. That means as dropped item, in an item frame, when held (except for when you're holding it yourself and are in first person view (default)). Does *not* render glass in inventory or when held in first person view, in those cases it's rendered by `glint_direct`. 
-
-  [Back to Top](#contents)
-
-  ---
-
-  ### glint_direct 
-  <h6>
-    View on mcmeta:
-    <a title="Open rendertype_glint_direct.json on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertype_glint_direct.json">json</a> • 
-    <a title="Open rendertype_glint_direct.vsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertype_glint_direct.vsh">vsh</a> • 
-    <a title="Open rendertype_glint_direct.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertype_glint_direct.fsh">fsh</a>
-  </h6>
-
-  The enchant glint in most situations. Enchanted worn armor is rendered by `armor_entity_glint` and glass type blocks are rendered by `glint` when in world instead.
+  Default enchant glint. Applies to items and blocks, in the inventory or in the world.
 
   [Back to Top](#contents)
 
@@ -1060,20 +1033,6 @@
 
   [Back to Top](#contents)
 
-  ---
-
-  ### rendertype_armor_glint
-  <h6>
-    View on mcmeta:
-    <a title="Open rendertypermor_glint.json on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertype_armor_glint.json">json</a> • 
-    <a title="Open rendertype_armor_glint.vsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertype_armor_glint.vsh">vsh</a> • 
-    <a title="Open rendertype_armor_glint.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertype_armor_glint.fsh">fsh</a>
-  </h6>
-
-  Unknown.
-
-  [Back to Top](#contents)
-
 
   # Removed
 
@@ -1110,3 +1069,47 @@
 
   ---
 
+  ### position_color_tex 
+
+  > ***Removed in 24w21a***<br />
+  > Merged with [position_tex_color](#position_tex_color)<br />
+  > View last available version on mcmeta: <a title="Open position_color_tex.json on mcmeta" href="https://github.com/misode/mcmeta/blob/8973096b19ea289821ca208d374c1b87dd078bff/assets/minecraft/shaders/core/position_color_tex.json">json</a> • 
+    <a title="Open position_color_tex.vsh on mcmeta" href="https://github.com/misode/mcmeta/blob/8973096b19ea289821ca208d374c1b87dd078bff/assets/minecraft/shaders/core/position_color_tex.vsh">vsh</a> • 
+    <a title="Open position_color_tex.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/8973096b19ea289821ca208d374c1b87dd078bff/assets/minecraft/shaders/core/position_color_tex.fsh">fsh</a>
+  </h6>
+
+  Was previously used for:
+  * Fire overlay when the player is burning
+  * Wall overlay when player is suffocating
+
+  <img src="images/position_tex_color_2.png" width=600>
+  <img src="images/position_tex_color_3.png" width=600>
+
+
+
+  [Back to Top](#contents)
+
+  ---
+
+  ### rendertype_glint_direct 
+
+  > ***Removed in 24w21a***<br />
+  > Merged with [rendertype_glint](#glint)<br />
+  > View last available version on mcmeta: <a title="Open rendertype_glint_direct.json on mcmeta" href="https://github.com/misode/mcmeta/blob/8973096b19ea289821ca208d374c1b87dd078bff/assets/minecraft/shaders/core/rendertype_glint_direct.json">json</a> • <a title="Open rendertype_glint_direct.vsh on mcmeta" href="https://github.com/misode/mcmeta/blob/8973096b19ea289821ca208d374c1b87dd078bff/assets/minecraft/shaders/core/rendertype_glint_direct.vsh">vsh</a> • <a title="Open rendertype_glint_direct.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/8973096b19ea289821ca208d374c1b87dd078bff/assets/minecraft/shaders/core/rendertype_glint_direct.fsh">fsh</a>
+
+  Was previously used for the enchant glint in most situations. Enchanted worn armor was rendered by `armor_entity_glint` and glass type blocks were rendered by `glint` when in world instead.
+
+  [Back to Top](#contents)
+
+---
+
+  ### rendertype_armor_glint
+
+  > ***Removed in 24w21a***<br />
+  > View last available version on mcmeta: <a title="Open rendertype_armor_glint.json on mcmeta" href="https://github.com/misode/mcmeta/blob/8973096b19ea289821ca208d374c1b87dd078bff/assets/minecraft/shaders/core/rendertype_armor_glint.json">json</a> • <a title="Open rendertype_armor_glint.vsh on mcmeta" href="https://github.com/misode/mcmeta/blob/8973096b19ea289821ca208d374c1b87dd078bff/assets/minecraft/shaders/core/rendertype_armor_glint.vsh">vsh</a> • <a title="Open rendertype_armor_glint.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/8973096b19ea289821ca208d374c1b87dd078bff/assets/minecraft/shaders/core/rendertype_armor_glint.fsh">fsh</a>
+
+  Was unused.
+
+  [Back to Top](#contents)
+
+  ---
