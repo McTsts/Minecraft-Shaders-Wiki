@@ -586,7 +586,7 @@
     <a title="Open rendertype_entity_cutout.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertype_entity_cutout.fsh">fsh</a>
   </h6>
 
-  Block items in the inventory or hand/head of an entity, chests, ender chests, chest in minecarts, and as entities. Does not include Shulker boxes (see [entity_cutout_no_cull](#entity_cutout_no_cull)). Also used for the fire overlay on burning entities.
+  Block items in the inventory or hand/head of an entity, chests, ender chests, chest in minecarts, fishing bobber, and as entities. Does not include Shulker boxes (see [entity_cutout_no_cull](#entity_cutout_no_cull)). Also used for the fire overlay on burning entities.
 
   <img src="images/rendertype_entity_cutout.png" width=300> 
 
