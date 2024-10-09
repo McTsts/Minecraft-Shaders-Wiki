@@ -355,8 +355,8 @@
   </h6>
 
   Translucent entities and parts of entities: 
-  * Slimes
-  * Players (except for the lower layer of the arm in first person)
+  * Slimes (Only the outer transparent part)
+  * Players (except for the lower layer of the arm in first person) (in 1.21.1, this seems to now include the lower arm layer?)
   * Player heads (if player has set a custom skin)
   * Markings on horses
   * Some other horses parts
@@ -364,10 +364,14 @@
   * Elder guardian particle effect
   * Piglin
   * Zombified Piglin
+  * Piglin Brute
+  * Breeze (Not including the eyes, eyebrows, or swirl effect)
+  * Allay
+  * Shot Wither Skull
 
   Sampler1 contains the red color that is overlayed on entities when they take damage.
 
-  <img src="images/rendertype_entity_translucent.png" height=200> <img src="images/rendertype_entity_translucent_2.png" height=200> <img src="images/rendertype_entity_translucent_3.png" height=200>
+  <img src="images/rendertype_entity_translucent.png" height=200> <img src="images/rendertype_entity_translucent_2.png" height=200> <img src="images/rendertype_entity_translucent_3.png" height=200> <img src="https://github.com/user-attachments/assets/f1a582bf-cef3-43d0-ae35-e62b27ae16af" height=200>
 
   [Back to Top](#contents)
 
@@ -393,7 +397,7 @@
   * Paintings, 
   * Tridents, 
   * The ears on the Deadmau5 skin,
-  * The bottom skin layer of the first-person hand,
+  * The bottom skin layer of the first-person hand (doesn't seem to be true in 1.21.1, and rather controlled by [entity_translucent](#entity_translucent),
   * The conduit item in the inventory.
 
   With item frames, the item frame entity itself is part of the shader, however, items on it are not. Only the filled-in parts of maps placed on an item frame are part of the shader.
