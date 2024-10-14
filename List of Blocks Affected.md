@@ -16,6 +16,9 @@ Original list by boq [here](https://gist.github.com/boq/4514320b590de1fbe84349d2
 - dark_oak_leaves
 - azalea_leaves
 - azalea_leaves_flowers
+- chest
+- ender_chest
+- shulker_box
 
 ## cutout
 - oak_sapling
