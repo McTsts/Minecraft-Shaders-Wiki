@@ -7,7 +7,7 @@
     - [particle](#particle) (Particles)
     - [position](#position) (Sky)
     - [position_color](#position_color) (Pre 1.20 Solid Color UI)
-    - [position_tex](#position_tex) (Texture UI, Worldborder, Sun/Moon)
+    - [position_tex](#position_tex) (Worldborder, Sun/Moon)
     - [position_tex_color](#position_tex_color) (Fire, Wall Overlay, End Sky, Menu Background)
   - [Rendertype](#rendertype)
     - [Blocks](#blocks)
@@ -63,7 +63,9 @@
   - [Unknown](#unknown)
     - [position_color_lightmap](#position_color_lightmap)
     - [position_color_tex_lightmap](#position_color_tex_lightmap)
-  - [Removed](#removed)
+  - [Removed/Unused](#removed)
+    - position_tex_color_lightmap (Unused)
+    - position_color_lightmap (Unused)
     - [block](#block)
     - [new_entity](#new_entity)
     - [rendertype_translucent_no_crumbling](#rendertype_translucent_no_crumbling)
@@ -155,20 +157,13 @@
   Handles a few different things:
   * The Sun and Moon
   * The worldborder
-  * Most GUI textures (like the hotbar, buttons, icons)
-  * Overlays (pumpkin blur, powder snow, the vignette, spyglass glass)
-  * The crosshair
-  * The mojang logo in loading screens
-  * The menus backgroud blur (blurring is done in post)
-  * The Minecraft Java Edition logo on the main screen
-  * The player heads and connections icons in tab
   
   Also affects:
   * Chunk border display
   * Sky
   * Sunset and sunrise halo
 
-  For UI elements Position is the screen size divided by the gui scale. E.g. 1920x1080 with GUI scale 3 means Position for x will be [0,640] and for y [0,360].
+  Previously affect some gui elements, which were moved to `position_tex_color`.
 
   <img src="images/position_tex.png" width=600> <img src="images/position_tex_2.png" width=600>
 
@@ -187,9 +182,9 @@
   Handles:
   * The End sky
   * main menu panorama and menu backgrounds
-  * Fire overlay when the player is burning
-  * Wall overlay when player is suffocating
-  
+  * Most GUI textures (hotbar, buttons, icons, etc.)
+  * Overlays (Vignette, Pumpkin blur, Powdered snow, Fire, Suffocation)
+  * Mojang/Minecraft logo
 
   <img src="images/position_tex_color.png" width=600>
   <img src="images/position_tex_color_2.png" width=600>
