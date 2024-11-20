@@ -23,7 +23,6 @@
       - [entity_cutout_no_cull](#entity_cutout_no_cull) (Entities)
       - [entity_translucent](#entity_translucent) (Overlays/Transparent Parts)
       - [entity_solid](#entity_solid) (Entity-style Objects)
-      - [entity_translucent_cull](#entity_translucent_cull) (Non-block-placing Items)
       - [entity_cutout](#entity_cutout) (Block-placing Items)
       - [armor_cutout_no_cull](#armor_cutout_no_cull) (Armor)
       - [armor_entity_glint](#armor_entity_glint) (Worn Armor Enchant Glint)
@@ -37,7 +36,7 @@
       - [entity_cutout_no_cull_z_offset](#entity_cutout_no_cull_z_offset) (Mob Skulls, Minecart, Shulker)
       - [entity_decal](#entity_decal) (Ender Dragon Death)
       - [entity_alpha](#entity_alpha) (Ender Dragon Death Wings)
-      - [item_entity_translucent_cull](#item_entity_translucent_cull) (XP Orbs, Fabulous translucent items, Invisible Entities)
+      - [item_entity_translucent_cull](#item_entity_translucent_cull) (Non-block-placing Items, XP Orbs, Fabulous translucent items, Invisible Entities)
       - [entity_smooth_cutout](#entity_smooth_cutout) (End Crystal Beams)
       - [entity_translucent_emissive](#entity_translucent_emissive) (Glowing parts of Warden texture)
       - [entity_no_outline](#entity_no_outline) (Banner)
@@ -404,22 +403,6 @@
 
   ---
 
-  ### entity_translucent_cull 
-  <h6>
-    View on mcmeta:
-    <a title="Open rendertype_entity_translucent_cull.json on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertype_entity_translucent_cull.json">json</a> • 
-    <a title="Open rendertype_entity_translucent_cull.vsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertype_entity_translucent_cull.vsh">vsh</a> • 
-    <a title="Open rendertype_entity_translucent_cull.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertype_entity_translucent_cull.fsh">fsh</a>
-  </h6>
-
-  Flat texture items and transparent blocks held by entities or on head, in the inventory, and as entities. If Fabulous graphics is off, this shader also affects translucent items like stained glass and their panes, however if it is on, you should check [item_entity_translucent_cull](#item_entity_translucent_cull).
-
-  <img src="images/rendertype_entity_translucent_cull.png" height=200> <img src="images/rendertype_entity_translucent_cull_2.png" height=200>
-
-  [Back to Top](#contents)
-
-  ---
-
   ### armor_cutout_no_cull 
   <h6>
     View on mcmeta:
@@ -619,9 +602,9 @@
     <a title="Open rendertype_item_entity_translucent_cull.fsh on mcmeta" href="https://github.com/misode/mcmeta/blob/assets/assets/minecraft/shaders/core/rendertype_item_entity_translucent_cull.fsh">fsh</a>
   </h6>
 
-  Handles dropped translucent items in Fabulous graphics. Also affects invisible entities while using spectator mode or the gamerule `seeFriendlyInvisibles`, as well as experience orbs in all graphics settings.
+  Flat texture items and transparent blocks held by entities or on head, in the inventory, and as entities. Also affects invisible entities while using spectator mode or the gamerule `seeFriendlyInvisibles`, as well as experience orbs in all graphics settings.
 
-  <img src="images/rendertype_item_entity_translucent_cull.png" width=300> <img src="images/rendertype_item_entity_translucent_cull_2.png" width=300> 
+  <img src="images/rendertype_item_entity_translucent_cull.png" width=300> <img src="images/rendertype_item_entity_translucent_cull_2.png" width=300> <img src="images/rendertype_entity_translucent_cull.png" height=200> <img src="images/rendertype_entity_translucent_cull_2.png" height=200>
 
   [Back to Top](#contents)
 
