@@ -832,9 +832,10 @@
   * 300: Item count in inventory
   * 400: Item count while dragging item, tooltip texts, compact potion info
   * 0 to 104: Maps (not actually text)
-  * 0.1 [1.21.1]: Chat Text Shadow
-  * 0.0 [1.21.1]: Chat Input Text Shadow, Container Titles
+  * 50.0 [1.21.1]: Chat Text Shadow
+  * 0.0 [1.21.1]: Chat Input Text Shadow, Container Titles, Text in Books
   * 1800.0 [1.21.1]: F3 Text Background
+  * 2650.0 [1.21.1]: Shown Chat Text Shadow (The text in chat that is shown for a brief time before fading away)
 
   Since maps share the z value with the chat display and a part of the hotbar item count, you can test for Sampler0 having a size of 128 pixels in both directions to test for the face being a map.
 
